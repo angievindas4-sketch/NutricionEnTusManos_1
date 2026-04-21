@@ -52,17 +52,20 @@ namespace NutricionEnTusManos_1.Views
             Console.Clear();
             Console.WriteLine("--- INICIO DE SESIÓN ---");
             Console.Write("Usuario: ");
-            // CAMBIO: Controlamos el posible nulo con ?? ""
             UsuarioInput = Console.ReadLine() ?? "";
             Console.Write("Contraseña: ");
             PasswordInput = Console.ReadLine() ?? "";
 
+            // ESTA ES LA PARTE QUE MODIFICAS:
             if (_controladorLogin.ValidarLogin(UsuarioInput, PasswordInput))
             {
                 Console.WriteLine("\n¡Acceso concedido! Bienvenido.");
-                Console.WriteLine("Presione una tecla para entrar al sistema de nutrición...");
+                Console.WriteLine("Presione una tecla para continuar al módulo de nutrición...");
                 Console.ReadKey();
-                // Aquí llamaremos al Strategy después
+
+                // Llamamos a la otra vista (la que acabas de crear)
+                VistaNutricion nutriView = new VistaNutricion();
+                nutriView.MostrarModulo();
             }
             else
             {
