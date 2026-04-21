@@ -1,5 +1,4 @@
-﻿using NutricionEnTusManos_1.Models;
-using NutricionEnTusManos_1.Models.Estrategias;
+﻿using NutricionEnTusManos_1.Controllers.Estrategias;
 
 namespace NutricionEnTusManos_1.Controllers
 {

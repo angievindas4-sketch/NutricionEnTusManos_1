@@ -1,6 +1,4 @@
-﻿using NutricionEnTusManos_1.Models.Estrategias;
-
-namespace NutricionEnTusManos_1.Models
+﻿namespace NutricionEnTusManos_1.Controllers.Estrategias
 {
     public class CalculadoraNutricional
     {

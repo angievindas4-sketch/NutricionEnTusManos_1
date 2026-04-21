@@ -1,4 +1,4 @@
-﻿namespace NutricionEnTusManos_1.Models.Estrategias
+﻿namespace NutricionEnTusManos_1.Controllers.Estrategias
 {
     public class EstrategiaPerderPeso : IEstrategiaNutricion
     {

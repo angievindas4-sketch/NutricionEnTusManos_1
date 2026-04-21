@@ -1,4 +1,4 @@
-﻿namespace NutricionEnTusManos_1.Models.Estrategias
+﻿namespace NutricionEnTusManos_1.Controllers.Estrategias
 {
     // SOLID (D): Inversión de Dependencias. 
     // Definimos qué debe hacer cualquier estrategia nutricional.
