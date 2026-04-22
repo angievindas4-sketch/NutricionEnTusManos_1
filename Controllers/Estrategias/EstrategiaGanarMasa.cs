@@ -1,9 +1,8 @@
-﻿namespace NutricionEnTusManos_1.Controllers.Estrategias
+﻿using NutricionEnTusManos_1.Controllers.Estrategias;
+
+public class EstrategiaGanarMasa : IEstrategiaNutricion
 {
-    public class EstrategiaGanarMasa : IEstrategiaNutricion
-    {
-        public string ObtenerNombreObjetivo() => "Ganar Masa";
-        public double CalcularCalorias(double peso, int edad) => (peso * 22) + 500;
-        public string ObtenerRecomendacion() => "Superávit y pesas.";
-    }
+    public double CalcularCalorias(double peso, int edad) => peso * 35;
+    public string ObtenerNombreObjetivo() => "GANAR MASA MUSCULAR";
+    public string ObtenerRecomendacion() => "Aumente el consumo de proteínas y realice entrenamiento de fuerza.";
 }

@@ -2,8 +2,9 @@
 {
     public interface IEstrategiaNutricion
     {
-        string ObtenerNombreObjetivo();
+        // Debemos declarar los 3 métodos aquí para que la calculadora pueda verlos
         double CalcularCalorias(double peso, int edad);
+        string ObtenerNombreObjetivo();
         string ObtenerRecomendacion();
     }
 }
