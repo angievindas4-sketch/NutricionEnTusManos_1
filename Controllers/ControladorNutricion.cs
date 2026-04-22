@@ -2,33 +2,21 @@
 
 namespace NutricionEnTusManos_1.Controllers
 {
-    // SOLID (SRP): Esta clase solo coordina la lógica de nutrición.
     public class ControladorNutricion
     {
         private CalculadoraNutricional? _calculadora;
 
         public string ObtenerPlan(int opcion, double peso, int edad)
         {
-            IEstrategiaNutricion estrategiaSeleccionada;
+            IEstrategiaNutricion estrategia;
 
-            // El controlador decide qué estrategia inyectar al modelo (Strategy Pattern)
-            switch (opcion)
-            {
-                case 1:
-                    estrategiaSeleccionada = new EstrategiaPerderPeso();
-                    break;
-                case 2:
-                    estrategiaSeleccionada = new EstrategiaGanarMasa();
-                    break;
-                default:
-                    return "Opción no válida.";
-            }
+            if (opcion == 1)
+                estrategia = new EstrategiaPerderPeso();
+            else
+                estrategia = new EstrategiaGanarMasa();
 
-            // Usamos el contexto del modelo
-            _calculadora = new CalculadoraNutricional(estrategiaSeleccionada);
-
-            // Retornamos el informe que genera el modelo
-            return _calculadora.GenerarInforme(peso, edad);
+            _calculadora = new CalculadoraNutricional(estrategia);
+            return _calculadora.Calcular(peso, edad);
         }
     }
 }

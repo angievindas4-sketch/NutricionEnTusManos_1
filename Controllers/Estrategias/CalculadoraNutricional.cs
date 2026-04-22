@@ -2,27 +2,19 @@
 {
     public class CalculadoraNutricional
     {
-        // POO: Composición. La calculadora "tiene una" estrategia.
-        private IEstrategiaNutricion _estrategia;
+        private readonly IEstrategiaNutricion _estrategia;
 
-        // El constructor recibe cualquier clase que implemente la interfaz
         public CalculadoraNutricional(IEstrategiaNutricion estrategia)
         {
             _estrategia = estrategia;
         }
 
-        // Permite cambiar la estrategia en tiempo de ejecución
-        public void CambiarEstrategia(IEstrategiaNutricion nuevaEstrategia)
+        public string Calcular(double peso, int edad)
         {
-            _estrategia = nuevaEstrategia;
-        }
-
-        public string GenerarInforme(double peso, int edad)
-        {
-            double calorias = _estrategia.CalcularCaloriasRecomendadas(peso, edad);
-            return $"--- PLAN: {_estrategia.ObtenerNombreObjetivo()} ---\n" +
-                   $"Calorías diarias: {calorias} kcal\n" +
-                   $"Recomendación: {_estrategia.ObtenerRecomendacion()}";
+            double resultado = _estrategia.CalcularCalorias(peso, edad);
+            return $"OBJETIVO: {_estrategia.ObtenerNombreObjetivo()}\n" +
+                   $"CALORÍAS: {resultado} kcal\n" +
+                   $"CONSEJO: {_estrategia.ObtenerRecomendacion()}";
         }
     }
 }
