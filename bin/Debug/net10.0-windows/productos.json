@@ -1,0 +1,12 @@
+[
+  { "Nombre": "Pechuga de Pollo", "UnidadMedida": "100g", "Calorias": 165, "Proteinas": 31, "Carbohidratos": 0, "Grasas": 3.6 },
+  { "Nombre": "Arroz Blanco", "UnidadMedida": "100g", "Calorias": 130, "Proteinas": 2.7, "Carbohidratos": 28, "Grasas": 0.3 },
+  { "Nombre": "Huevo Entero", "UnidadMedida": "1 unidad", "Calorias": 70, "Proteinas": 6, "Carbohidratos": 0.6, "Grasas": 5 },
+  { "Nombre": "Avena en hojuelas", "UnidadMedida": "50g", "Calorias": 190, "Proteinas": 7, "Carbohidratos": 33, "Grasas": 3 },
+  { "Nombre": "Manzana Verde", "UnidadMedida": "1 unidad", "Calorias": 95, "Proteinas": 0.5, "Carbohidratos": 25, "Grasas": 0.3 },
+  { "Nombre": "Aguacate", "UnidadMedida": "100g", "Calorias": 160, "Proteinas": 2, "Carbohidratos": 9, "Grasas": 15 },
+  { "Nombre": "Leche Descremada", "UnidadMedida": "250ml", "Calorias": 85, "Proteinas": 8, "Carbohidratos": 12, "Grasas": 0.5 },
+  { "Nombre": "Atun en agua", "UnidadMedida": "100g", "Calorias": 116, "Proteinas": 26, "Carbohidratos": 0, "Grasas": 1 },
+  { "Nombre": "Platano Maduro", "UnidadMedida": "100g", "Calorias": 122, "Proteinas": 1.3, "Carbohidratos": 32, "Grasas": 0.4 },
+  { "Nombre": "Almendras", "UnidadMedida": "30g", "Calorias": 170, "Proteinas": 6, "Carbohidratos": 6, "Grasas": 15 }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "NombreUsuario": "admin",
+    "Contrasena": "1234",
+    "Peso": 80.0,
+    "Altura": 1.75,
+    "Edad": 25,
+    "Sexo": "M",
+    "NivelActividad": "Activo",
+    "Objetivo": "Ganar masa",
+    "TipoDieta": "Estándar"
+  },
+  {
+    "NombreUsuario": "maria_keto",
+    "Contrasena": "maria123",
+    "Peso": 65.0,
+    "Altura": 1.60,
+    "Edad": 30,
+    "Sexo": "F",
+    "NivelActividad": "Sedentario",
+    "Objetivo": "Perder grasa",
+    "TipoDieta": "Keto"
+  },
+  {
+    "NombreUsuario": "juan_veggie",
+    "Contrasena": "juan789",
+    "Peso": 70.0,
+    "Altura": 1.80,
+    "Edad": 22,
+    "Sexo": "M",
+    "NivelActividad": "Muy Activo",
+    "Objetivo": "Mantener",
+    "TipoDieta": "Vegetariano"
+  }
+]
