@@ -24,7 +24,13 @@ namespace NutricionEnTusManos_1.Controllers
         {
             if (_listaUsuarios.Any(u => u.NombreUsuario == nombre)) return false;
 
-            Usuario nuevo = new Usuario(nombre, contrasena);
+            // Usamos el constructor vacío y asignamos lo básico
+            Usuario nuevo = new Usuario
+            {
+                NombreUsuario = nombre,
+                Contrasena = contrasena
+            };
+
             _listaUsuarios.Add(nuevo);
             _gestorUsuario.GuardarUsuarios(_listaUsuarios);
             return true;

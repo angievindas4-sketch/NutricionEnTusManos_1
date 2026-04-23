@@ -107,7 +107,6 @@
             label3.Size = new Size(187, 25);
             label3.TabIndex = 7;
             label3.Text = "Seleccione su objetivo";
-            
             // 
             // label4
             // 
@@ -122,7 +121,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(487, 622);
+            ClientSize = new Size(456, 622);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -133,7 +132,7 @@
             Controls.Add(btnCalcular);
             Controls.Add(lblResultado);
             Name = "VistaNutricion";
-            Text = "VistaNutricion";
+            Text = "it";
             ResumeLayout(false);
             PerformLayout();
         }
