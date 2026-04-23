@@ -107,7 +107,7 @@
             label3.Size = new Size(187, 25);
             label3.TabIndex = 7;
             label3.Text = "Seleccione su objetivo";
-            label3.Click += label3_Click;
+            
             // 
             // label4
             // 
@@ -134,7 +134,6 @@
             Controls.Add(lblResultado);
             Name = "VistaNutricion";
             Text = "VistaNutricion";
-            Load += VistaNutricion_Load;
             ResumeLayout(false);
             PerformLayout();
         }

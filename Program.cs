@@ -1,5 +1,18 @@
+using System;
+using System.Windows.Forms;
 using NutricionEnTusManos_1.Views;
 
-// Instanciamos la vista y lanzamos el menú
-VistaLogin vista = new VistaLogin();
-vista.MostrarMenuPrincipal();
+namespace NutricionEnTusManos_1
+{
+    internal static class Program
+    {
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            // Solo esta línea para iniciar el programa:
+            Application.Run(new VistaLogin());
+        }
+    }
+}

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angie\\OneDrive\\Documentos\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1.csproj": {}
+    "C:\\Users\\Anyel\\Documents\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angie\\OneDrive\\Documentos\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1.csproj": {
+    "C:\\Users\\Anyel\\Documents\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angie\\OneDrive\\Documentos\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1.csproj",
+        "projectUniqueName": "C:\\Users\\Anyel\\Documents\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1.csproj",
         "projectName": "NutricionEnTusManos_1",
-        "projectPath": "C:\\Users\\angie\\OneDrive\\Documentos\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1.csproj",
-        "packagesPath": "C:\\Users\\angie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angie\\OneDrive\\Documentos\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\obj\\",
+        "projectPath": "C:\\Users\\Anyel\\Documents\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1.csproj",
+        "packagesPath": "C:\\Users\\Anyel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anyel\\Documents\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\angie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anyel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +25,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net10.0-windows7.0": {
+          "net10.0-windows": {
+            "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {}
           }
@@ -43,7 +44,8 @@
         "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
-        "net10.0-windows7.0": {
+        "net10.0-windows": {
+          "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "imports": [
             "net461",
@@ -64,7 +66,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
