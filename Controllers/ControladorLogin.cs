@@ -12,7 +12,15 @@ namespace NutricionEnTusManos_1.Controllers
         public ControladorLogin()
         {
             _gestorUsuario = new ControladorUsuario();
+            // Refrescamos la lista siempre al iniciar para tener datos actuales del JSON
             _listaUsuarios = _gestorUsuario.CargarUsuarios();
+        }
+
+        // NUEVO MÉTODO: Devuelve el objeto Usuario completo si existe, o null si no.
+        public Usuario ObtenerUsuario(string nombre, string contrasena)
+        {
+            // Buscamos en la lista el usuario que coincida con ambos datos
+            return _listaUsuarios.FirstOrDefault(u => u.NombreUsuario == nombre && u.Contrasena == contrasena);
         }
 
         public bool ValidarLogin(string nombre, string contrasena)
@@ -24,11 +32,14 @@ namespace NutricionEnTusManos_1.Controllers
         {
             if (_listaUsuarios.Any(u => u.NombreUsuario == nombre)) return false;
 
-            // Usamos el constructor vacío y asignamos lo básico
             Usuario nuevo = new Usuario
             {
                 NombreUsuario = nombre,
-                Contrasena = contrasena
+                Contrasena = contrasena,
+                // Valores por defecto para nuevos registros
+                Peso = 0,
+                Altura = 0,
+                Objetivo = "No definido"
             };
 
             _listaUsuarios.Add(nuevo);
