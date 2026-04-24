@@ -4,8 +4,22 @@
     "Fecha": "2026-04-22T08:30:00",
     "TiempoComida": "Desayuno",
     "Alimentos": [
-      { "Nombre": "Huevo Entero", "UnidadMedida": "2 unidades", "Calorias": 140, "Proteinas": 12, "Carbohidratos": 1.2, "Grasas": 10 },
-      { "Nombre": "Avena en hojuelas", "UnidadMedida": "50g", "Calorias": 190, "Proteinas": 7, "Carbohidratos": 33, "Grasas": 3 }
+      {
+        "Nombre": "Huevo Entero",
+        "UnidadMedida": "2 unidades",
+        "Calorias": 140,
+        "Proteinas": 12,
+        "Carbohidratos": 1.2,
+        "Grasas": 10
+      },
+      {
+        "Nombre": "Avena en hojuelas",
+        "UnidadMedida": "50g",
+        "Calorias": 190,
+        "Proteinas": 7,
+        "Carbohidratos": 33,
+        "Grasas": 3
+      }
     ]
   },
   {
@@ -13,8 +27,371 @@
     "Fecha": "2026-04-22T13:00:00",
     "TiempoComida": "Almuerzo",
     "Alimentos": [
-      { "Nombre": "Pechuga de Pollo", "UnidadMedida": "150g", "Calorias": 247, "Proteinas": 46, "Carbohidratos": 0, "Grasas": 5 },
-      { "Nombre": "Arroz Blanco", "UnidadMedida": "200g", "Calorias": 260, "Proteinas": 5.4, "Carbohidratos": 56, "Grasas": 0.6 }
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "150g",
+        "Calorias": 247,
+        "Proteinas": 46,
+        "Carbohidratos": 0,
+        "Grasas": 5
+      },
+      {
+        "Nombre": "Arroz Blanco",
+        "UnidadMedida": "200g",
+        "Calorias": 260,
+        "Proteinas": 5.4,
+        "Carbohidratos": 56,
+        "Grasas": 0.6
+      }
+    ]
+  },
+  {
+    "NombreUsuario": "maria_keto",
+    "Fecha": "2026-04-23T00:00:00-06:00",
+    "TiempoComida": null,
+    "Alimentos": [
+      {
+        "Nombre": "Platano Maduro",
+        "UnidadMedida": "100g",
+        "Calorias": 122,
+        "Proteinas": 1.3,
+        "Carbohidratos": 32,
+        "Grasas": 0.4
+      },
+      {
+        "Nombre": "Manzana Verde",
+        "UnidadMedida": "1 unidad",
+        "Calorias": 95,
+        "Proteinas": 0.5,
+        "Carbohidratos": 25,
+        "Grasas": 0.3
+      },
+      {
+        "Nombre": "Arroz Blanco",
+        "UnidadMedida": "100g",
+        "Calorias": 130,
+        "Proteinas": 2.7,
+        "Carbohidratos": 28,
+        "Grasas": 0.3
+      },
+      {
+        "Nombre": "Leche Descremada",
+        "UnidadMedida": "250ml",
+        "Calorias": 85,
+        "Proteinas": 8,
+        "Carbohidratos": 12,
+        "Grasas": 0.5
+      },
+      {
+        "Nombre": "Almendras",
+        "UnidadMedida": "30g",
+        "Calorias": 170,
+        "Proteinas": 6,
+        "Carbohidratos": 6,
+        "Grasas": 15
+      },
+      {
+        "Nombre": "Huevo Entero",
+        "UnidadMedida": "1 unidad",
+        "Calorias": 70,
+        "Proteinas": 6,
+        "Carbohidratos": 0.6,
+        "Grasas": 5
+      },
+      {
+        "Nombre": "Avena en hojuelas",
+        "UnidadMedida": "50g",
+        "Calorias": 190,
+        "Proteinas": 7,
+        "Carbohidratos": 33,
+        "Grasas": 3
+      },
+      {
+        "Nombre": "Arroz Blanco",
+        "UnidadMedida": "100g",
+        "Calorias": 130,
+        "Proteinas": 2.7,
+        "Carbohidratos": 28,
+        "Grasas": 0.3
+      },
+      {
+        "Nombre": "Aguacate",
+        "UnidadMedida": "100g",
+        "Calorias": 160,
+        "Proteinas": 2,
+        "Carbohidratos": 9,
+        "Grasas": 15
+      }
+    ]
+  },
+  {
+    "NombreUsuario": "juan_veggie",
+    "Fecha": "2026-04-23T00:00:00-06:00",
+    "TiempoComida": null,
+    "Alimentos": [
+      {
+        "Nombre": "Arroz Blanco",
+        "UnidadMedida": "100g",
+        "Calorias": 130,
+        "Proteinas": 2.7,
+        "Carbohidratos": 28,
+        "Grasas": 0.3
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Arroz Blanco",
+        "UnidadMedida": "100g",
+        "Calorias": 130,
+        "Proteinas": 2.7,
+        "Carbohidratos": 28,
+        "Grasas": 0.3
+      },
+      {
+        "Nombre": "Arroz Blanco",
+        "UnidadMedida": "100g",
+        "Calorias": 130,
+        "Proteinas": 2.7,
+        "Carbohidratos": 28,
+        "Grasas": 0.3
+      },
+      {
+        "Nombre": "Arroz Blanco",
+        "UnidadMedida": "100g",
+        "Calorias": 130,
+        "Proteinas": 2.7,
+        "Carbohidratos": 28,
+        "Grasas": 0.3
+      },
+      {
+        "Nombre": "Aguacate",
+        "UnidadMedida": "100g",
+        "Calorias": 160,
+        "Proteinas": 2,
+        "Carbohidratos": 9,
+        "Grasas": 15
+      },
+      {
+        "Nombre": "Aguacate",
+        "UnidadMedida": "100g",
+        "Calorias": 160,
+        "Proteinas": 2,
+        "Carbohidratos": 9,
+        "Grasas": 15
+      },
+      {
+        "Nombre": "Aguacate",
+        "UnidadMedida": "100g",
+        "Calorias": 160,
+        "Proteinas": 2,
+        "Carbohidratos": 9,
+        "Grasas": 15
+      },
+      {
+        "Nombre": "Aguacate",
+        "UnidadMedida": "100g",
+        "Calorias": 160,
+        "Proteinas": 2,
+        "Carbohidratos": 9,
+        "Grasas": 15
+      },
+      {
+        "Nombre": "Aguacate",
+        "UnidadMedida": "100g",
+        "Calorias": 160,
+        "Proteinas": 2,
+        "Carbohidratos": 9,
+        "Grasas": 15
+      },
+      {
+        "Nombre": "Aguacate",
+        "UnidadMedida": "100g",
+        "Calorias": 160,
+        "Proteinas": 2,
+        "Carbohidratos": 9,
+        "Grasas": 15
+      },
+      {
+        "Nombre": "Aguacate",
+        "UnidadMedida": "100g",
+        "Calorias": 160,
+        "Proteinas": 2,
+        "Carbohidratos": 9,
+        "Grasas": 15
+      },
+      {
+        "Nombre": "Aguacate",
+        "UnidadMedida": "100g",
+        "Calorias": 160,
+        "Proteinas": 2,
+        "Carbohidratos": 9,
+        "Grasas": 15
+      }
+    ]
+  },
+  {
+    "NombreUsuario": "admin",
+    "Fecha": "2026-04-23T00:00:00-06:00",
+    "TiempoComida": null,
+    "Alimentos": [
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      },
+      {
+        "Nombre": "Platano Maduro",
+        "UnidadMedida": "100g",
+        "Calorias": 122,
+        "Proteinas": 1.3,
+        "Carbohidratos": 32,
+        "Grasas": 0.4
+      },
+      {
+        "Nombre": "Platano Maduro",
+        "UnidadMedida": "100g",
+        "Calorias": 122,
+        "Proteinas": 1.3,
+        "Carbohidratos": 32,
+        "Grasas": 0.4
+      },
+      {
+        "Nombre": "Platano Maduro",
+        "UnidadMedida": "100g",
+        "Calorias": 122,
+        "Proteinas": 1.3,
+        "Carbohidratos": 32,
+        "Grasas": 0.4
+      },
+      {
+        "Nombre": "Platano Maduro",
+        "UnidadMedida": "100g",
+        "Calorias": 122,
+        "Proteinas": 1.3,
+        "Carbohidratos": 32,
+        "Grasas": 0.4
+      },
+      {
+        "Nombre": "Platano Maduro",
+        "UnidadMedida": "100g",
+        "Calorias": 122,
+        "Proteinas": 1.3,
+        "Carbohidratos": 32,
+        "Grasas": 0.4
+      },
+      {
+        "Nombre": "Platano Maduro",
+        "UnidadMedida": "100g",
+        "Calorias": 122,
+        "Proteinas": 1.3,
+        "Carbohidratos": 32,
+        "Grasas": 0.4
+      },
+      {
+        "Nombre": "Platano Maduro",
+        "UnidadMedida": "100g",
+        "Calorias": 122,
+        "Proteinas": 1.3,
+        "Carbohidratos": 32,
+        "Grasas": 0.4
+      },
+      {
+        "Nombre": "Platano Maduro",
+        "UnidadMedida": "100g",
+        "Calorias": 122,
+        "Proteinas": 1.3,
+        "Carbohidratos": 32,
+        "Grasas": 0.4
+      }
     ]
   }
 ]

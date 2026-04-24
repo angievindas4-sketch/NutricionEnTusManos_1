@@ -52,7 +52,35 @@ namespace NutricionEnTusManos_1.Controllers
         public List<Producto> BuscarAlimentos(string filtro)
         {
             var todos = _repoProductos.ObtenerTodos();
+            if (string.IsNullOrEmpty(filtro)) return new List<Producto>();
+
             return todos.Where(p => p.Nombre.ToLower().Contains(filtro.ToLower())).ToList();
+        }
+
+        // 5. NUEVO: Agregar alimento seleccionado al historial del usuario
+        public void AgregarAlimentoAlMenu(Producto producto)
+        {
+            // Buscamos si ya existe un registro para hoy
+            var historial = _repoMenu.ObtenerTodos();
+            var registroHoy = historial.FirstOrDefault(m =>
+                m.NombreUsuario == _usuarioActual.NombreUsuario &&
+                m.Fecha.Date == DateTime.Today);
+
+            if (registroHoy == null)
+            {
+                // Si es la primera comida del día, creamos el registro nuevo
+                registroHoy = new MenuDiario
+                {
+                    NombreUsuario = _usuarioActual.NombreUsuario,
+                    Fecha = DateTime.Today,
+                    Alimentos = new List<Producto>()
+                };
+                historial.Add(registroHoy);
+            }
+
+            // Añadimos el alimento a la lista de hoy y guardamos cambios en el JSON
+            registroHoy.Alimentos.Add(producto);
+            _repoMenu.GuardarTodos(historial);
         }
     }
 }
