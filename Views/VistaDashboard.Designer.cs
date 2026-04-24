@@ -45,6 +45,9 @@
             pbProteinas = new ProgressBar();
             lblCaloriasCirculo = new Label();
             panelGestion = new Panel();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             btnAgregar = new Button();
             dgvMenuHoy = new DataGridView();
             lstAlimentos = new ListBox();
@@ -58,7 +61,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.AliceBlue;
+            panel1.BackColor = Color.DarkTurquoise;
             panel1.Controls.Add(label3);
             panel1.Controls.Add(lblDieta);
             panel1.Controls.Add(lblObjetivo);
@@ -81,6 +84,7 @@
             label3.Size = new Size(144, 23);
             label3.TabIndex = 3;
             label3.Text = "PERFIL Y HABITOS";
+            label3.Click += label3_Click;
             // 
             // lblDieta
             // 
@@ -219,6 +223,9 @@
             // 
             panelGestion.BackColor = Color.White;
             panelGestion.BorderStyle = BorderStyle.FixedSingle;
+            panelGestion.Controls.Add(button3);
+            panelGestion.Controls.Add(button2);
+            panelGestion.Controls.Add(button1);
             panelGestion.Controls.Add(btnAgregar);
             panelGestion.Controls.Add(dgvMenuHoy);
             panelGestion.Controls.Add(lstAlimentos);
@@ -226,13 +233,40 @@
             panelGestion.Controls.Add(txtBuscar);
             panelGestion.Location = new Point(510, 0);
             panelGestion.Name = "panelGestion";
-            panelGestion.Size = new Size(699, 465);
+            panelGestion.Size = new Size(767, 442);
             panelGestion.TabIndex = 2;
             panelGestion.Paint += panelGestion_Paint;
             // 
+            // button3
+            // 
+            button3.Location = new Point(590, 391);
+            button3.Name = "button3";
+            button3.Size = new Size(146, 39);
+            button3.TabIndex = 7;
+            button3.Text = "Crear Alimento";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(387, 391);
+            button2.Name = "button2";
+            button2.Size = new Size(167, 40);
+            button2.TabIndex = 6;
+            button2.Text = "Eliminar  Alimento";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(211, 391);
+            button1.Name = "button1";
+            button1.Size = new Size(146, 40);
+            button1.TabIndex = 5;
+            button1.Text = "Editar Menu";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // btnAgregar
             // 
-            btnAgregar.BackColor = Color.MediumSeaGreen;
+            btnAgregar.BackColor = Color.DarkTurquoise;
             btnAgregar.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAgregar.ForeColor = Color.White;
             btnAgregar.Location = new Point(22, 390);
@@ -252,17 +286,23 @@
             dgvMenuHoy.Name = "dgvMenuHoy";
             dgvMenuHoy.RowHeadersVisible = false;
             dgvMenuHoy.RowHeadersWidth = 62;
-            dgvMenuHoy.Size = new Size(497, 317);
+            dgvMenuHoy.Size = new Size(539, 317);
             dgvMenuHoy.TabIndex = 3;
             // 
             // lstAlimentos
             // 
+            lstAlimentos.BackColor = Color.Gainsboro;
+            lstAlimentos.BorderStyle = BorderStyle.None;
+            lstAlimentos.DrawMode = DrawMode.OwnerDrawFixed;
             lstAlimentos.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lstAlimentos.ForeColor = Color.Black;
             lstAlimentos.FormattingEnabled = true;
+            lstAlimentos.ItemHeight = 30;
             lstAlimentos.Location = new Point(3, 100);
             lstAlimentos.Name = "lstAlimentos";
-            lstAlimentos.Size = new Size(188, 284);
+            lstAlimentos.Size = new Size(188, 270);
             lstAlimentos.TabIndex = 2;
+            lstAlimentos.DrawItem += lstAlimentos_DrawItem;
             // 
             // btnBuscar
             // 
@@ -273,6 +313,7 @@
             btnBuscar.TabIndex = 1;
             btnBuscar.Text = "🔍 ";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // txtBuscar
             // 
@@ -294,6 +335,7 @@
             Controls.Add(panel1);
             Name = "VistaDashboard";
             Text = "VistaDashboard";
+            Load += VistaDashboard_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panelCalorias.ResumeLayout(false);
@@ -328,5 +370,8 @@
         private Label label2;
         private Label label1;
         private Label label3;
+        private Button button3;
+        private Button button2;
+        private Button button1;
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NutricionEnTusManos_1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a41141f203f955b334b9c6144b481cb7564578bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+892bd95242330194300bb1a6d300eab7edf11d9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("NutricionEnTusManos_1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NutricionEnTusManos_1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
