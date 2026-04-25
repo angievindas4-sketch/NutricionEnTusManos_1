@@ -29,349 +29,135 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label3 = new Label();
-            lblDieta = new Label();
-            lblObjetivo = new Label();
-            lblPeso = new Label();
-            lblNombre = new Label();
-            panelCalorias = new Panel();
-            label2 = new Label();
-            label1 = new Label();
-            bna = new Label();
-            name = new Label();
-            mki = new Label();
-            pbGrasas = new ProgressBar();
-            pbCarbohidratos = new ProgressBar();
-            pbProteinas = new ProgressBar();
-            lblCaloriasCirculo = new Label();
-            panelGestion = new Panel();
-            button3 = new Button();
-            button2 = new Button();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel4 = new Panel();
             button1 = new Button();
-            btnAgregar = new Button();
-            dgvMenuHoy = new DataGridView();
-            lstAlimentos = new ListBox();
-            btnBuscar = new Button();
-            txtBuscar = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            panel5 = new Panel();
             panel1.SuspendLayout();
-            panelCalorias.SuspendLayout();
-            panelGestion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvMenuHoy).BeginInit();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DarkTurquoise;
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(lblDieta);
-            panel1.Controls.Add(lblObjetivo);
-            panel1.Controls.Add(lblPeso);
-            panel1.Controls.Add(lblNombre);
-            panel1.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            panel1.ForeColor = Color.Black;
+            panel1.BackColor = SystemColors.ButtonHighlight;
+            panel1.Controls.Add(panel2);
+            panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(214, 193);
+            panel1.Size = new Size(220, 645);
             panel1.TabIndex = 0;
             // 
-            // label3
+            // panel2
             // 
-            label3.AutoSize = true;
-            label3.BorderStyle = BorderStyle.FixedSingle;
-            label3.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(34, 21);
-            label3.Name = "label3";
-            label3.Size = new Size(144, 23);
-            label3.TabIndex = 3;
-            label3.Text = "PERFIL Y HABITOS";
-            label3.Click += label3_Click;
+            panel2.Location = new Point(250, 1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1052, 642);
+            panel2.TabIndex = 5;
             // 
-            // lblDieta
+            // panel3
             // 
-            lblDieta.AutoSize = true;
-            lblDieta.Location = new Point(12, 162);
-            lblDieta.Name = "lblDieta";
-            lblDieta.Size = new Size(55, 21);
-            lblDieta.TabIndex = 3;
-            lblDieta.Text = "Dieta:";
+            panel3.Controls.Add(tableLayoutPanel1);
+            panel3.Controls.Add(panel4);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(220, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1101, 645);
+            panel3.TabIndex = 1;
             // 
-            // lblObjetivo
+            // panel4
             // 
-            lblObjetivo.AutoSize = true;
-            lblObjetivo.Location = new Point(12, 132);
-            lblObjetivo.Name = "lblObjetivo";
-            lblObjetivo.Size = new Size(80, 21);
-            lblObjetivo.TabIndex = 2;
-            lblObjetivo.Text = "Objetivo:";
+            panel4.Controls.Add(label2);
+            panel4.Controls.Add(label1);
+            panel4.Controls.Add(button1);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(1101, 150);
+            panel4.TabIndex = 0;
             // 
-            // lblPeso
+            // button1
             // 
-            lblPeso.AutoSize = true;
-            lblPeso.Location = new Point(12, 101);
-            lblPeso.Name = "lblPeso";
-            lblPeso.Size = new Size(86, 21);
-            lblPeso.TabIndex = 1;
-            lblPeso.Text = "Peso: 0 kg";
-            // 
-            // lblNombre
-            // 
-            lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(12, 64);
-            lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(73, 21);
-            lblNombre.TabIndex = 0;
-            lblNombre.Text = "Usuario:";
-            // 
-            // panelCalorias
-            // 
-            panelCalorias.BackColor = Color.White;
-            panelCalorias.Controls.Add(label2);
-            panelCalorias.Controls.Add(label1);
-            panelCalorias.Controls.Add(bna);
-            panelCalorias.Controls.Add(name);
-            panelCalorias.Controls.Add(mki);
-            panelCalorias.Controls.Add(pbGrasas);
-            panelCalorias.Controls.Add(pbCarbohidratos);
-            panelCalorias.Controls.Add(pbProteinas);
-            panelCalorias.Controls.Add(lblCaloriasCirculo);
-            panelCalorias.Location = new Point(220, 0);
-            panelCalorias.Name = "panelCalorias";
-            panelCalorias.Size = new Size(266, 642);
-            panelCalorias.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(87, 477);
-            label2.Name = "label2";
-            label2.Size = new Size(77, 21);
-            label2.TabIndex = 8;
-            label2.Text = "MACROS";
+            button1.Location = new Point(833, 40);
+            button1.Name = "button1";
+            button1.Size = new Size(190, 82);
+            button1.TabIndex = 0;
+            button1.Text = "Actualizar Perfil";
+            button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(51, 284);
+            label1.Location = new Point(172, 36);
             label1.Name = "label1";
-            label1.Size = new Size(153, 21);
-            label1.TabIndex = 7;
-            label1.Text = "CALORIAS DIARIAS";
+            label1.Size = new Size(181, 25);
+            label1.TabIndex = 1;
+            label1.Text = "Nombre del Usuario: ";
             // 
-            // bna
+            // label2
             // 
-            bna.AutoSize = true;
-            bna.Location = new Point(3, 592);
-            bna.Name = "bna";
-            bna.Size = new Size(56, 25);
-            bna.TabIndex = 6;
-            bna.Text = "Grasa";
+            label2.AutoSize = true;
+            label2.Location = new Point(172, 97);
+            label2.Name = "label2";
+            label2.Size = new Size(99, 25);
+            label2.TabIndex = 2;
+            label2.Text = "ID Usuario:";
             // 
-            // name
+            // tableLayoutPanel1
             // 
-            name.AutoSize = true;
-            name.Location = new Point(3, 561);
-            name.Name = "name";
-            name.Size = new Size(125, 25);
-            name.TabIndex = 5;
-            name.Text = "Carbohidratos";
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.Controls.Add(panel5, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Top;
+            tableLayoutPanel1.Location = new Point(0, 150);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new Size(1101, 300);
+            tableLayoutPanel1.TabIndex = 1;
             // 
-            // mki
+            // panel5
             // 
-            mki.AutoSize = true;
-            mki.Location = new Point(3, 525);
-            mki.Name = "mki";
-            mki.Size = new Size(85, 25);
-            mki.TabIndex = 4;
-            mki.Text = "Proteínas";
-            // 
-            // pbGrasas
-            // 
-            pbGrasas.Location = new Point(136, 592);
-            pbGrasas.Name = "pbGrasas";
-            pbGrasas.Size = new Size(127, 30);
-            pbGrasas.TabIndex = 3;
-            // 
-            // pbCarbohidratos
-            // 
-            pbCarbohidratos.Location = new Point(136, 556);
-            pbCarbohidratos.Name = "pbCarbohidratos";
-            pbCarbohidratos.Size = new Size(127, 30);
-            pbCarbohidratos.TabIndex = 2;
-            // 
-            // pbProteinas
-            // 
-            pbProteinas.Location = new Point(136, 520);
-            pbProteinas.Name = "pbProteinas";
-            pbProteinas.Size = new Size(127, 30);
-            pbProteinas.TabIndex = 1;
-            // 
-            // lblCaloriasCirculo
-            // 
-            lblCaloriasCirculo.AutoSize = true;
-            lblCaloriasCirculo.BorderStyle = BorderStyle.FixedSingle;
-            lblCaloriasCirculo.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCaloriasCirculo.Location = new Point(34, 323);
-            lblCaloriasCirculo.Name = "lblCaloriasCirculo";
-            lblCaloriasCirculo.Size = new Size(94, 92);
-            lblCaloriasCirculo.TabIndex = 0;
-            lblCaloriasCirculo.Text = "1500\r\n kcal";
-            lblCaloriasCirculo.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panelGestion
-            // 
-            panelGestion.BackColor = Color.White;
-            panelGestion.BorderStyle = BorderStyle.FixedSingle;
-            panelGestion.Controls.Add(button3);
-            panelGestion.Controls.Add(button2);
-            panelGestion.Controls.Add(button1);
-            panelGestion.Controls.Add(btnAgregar);
-            panelGestion.Controls.Add(dgvMenuHoy);
-            panelGestion.Controls.Add(lstAlimentos);
-            panelGestion.Controls.Add(btnBuscar);
-            panelGestion.Controls.Add(txtBuscar);
-            panelGestion.Location = new Point(510, 0);
-            panelGestion.Name = "panelGestion";
-            panelGestion.Size = new Size(767, 442);
-            panelGestion.TabIndex = 2;
-            panelGestion.Paint += panelGestion_Paint;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(590, 391);
-            button3.Name = "button3";
-            button3.Size = new Size(146, 39);
-            button3.TabIndex = 7;
-            button3.Text = "Crear Alimento";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(387, 391);
-            button2.Name = "button2";
-            button2.Size = new Size(167, 40);
-            button2.TabIndex = 6;
-            button2.Text = "Eliminar  Alimento";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(211, 391);
-            button1.Name = "button1";
-            button1.Size = new Size(146, 40);
-            button1.TabIndex = 5;
-            button1.Text = "Editar Menu";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregar
-            // 
-            btnAgregar.BackColor = Color.DarkTurquoise;
-            btnAgregar.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAgregar.ForeColor = Color.White;
-            btnAgregar.Location = new Point(22, 390);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(146, 40);
-            btnAgregar.TabIndex = 4;
-            btnAgregar.Text = "Añadir al Menú";
-            btnAgregar.UseVisualStyleBackColor = false;
-            btnAgregar.Click += btnAgregar_Click;
-            // 
-            // dgvMenuHoy
-            // 
-            dgvMenuHoy.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvMenuHoy.BackgroundColor = Color.White;
-            dgvMenuHoy.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMenuHoy.Location = new Point(197, 67);
-            dgvMenuHoy.Name = "dgvMenuHoy";
-            dgvMenuHoy.RowHeadersVisible = false;
-            dgvMenuHoy.RowHeadersWidth = 62;
-            dgvMenuHoy.Size = new Size(539, 317);
-            dgvMenuHoy.TabIndex = 3;
-            // 
-            // lstAlimentos
-            // 
-            lstAlimentos.BackColor = Color.Gainsboro;
-            lstAlimentos.BorderStyle = BorderStyle.None;
-            lstAlimentos.DrawMode = DrawMode.OwnerDrawFixed;
-            lstAlimentos.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lstAlimentos.ForeColor = Color.Black;
-            lstAlimentos.FormattingEnabled = true;
-            lstAlimentos.ItemHeight = 30;
-            lstAlimentos.Location = new Point(3, 100);
-            lstAlimentos.Name = "lstAlimentos";
-            lstAlimentos.Size = new Size(188, 270);
-            lstAlimentos.TabIndex = 2;
-            lstAlimentos.DrawItem += lstAlimentos_DrawItem;
-            // 
-            // btnBuscar
-            // 
-            btnBuscar.Location = new Point(151, 63);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.RightToLeft = RightToLeft.Yes;
-            btnBuscar.Size = new Size(40, 31);
-            btnBuscar.TabIndex = 1;
-            btnBuscar.Text = "🔍 ";
-            btnBuscar.UseVisualStyleBackColor = true;
-            btnBuscar.Click += btnBuscar_Click;
-            // 
-            // txtBuscar
-            // 
-            txtBuscar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBuscar.Location = new Point(3, 63);
-            txtBuscar.Multiline = true;
-            txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(142, 31);
-            txtBuscar.TabIndex = 0;
-            txtBuscar.TextChanged += txtBuscar_TextChanged;
+            panel5.Dock = DockStyle.Fill;
+            panel5.Location = new Point(3, 3);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(544, 294);
+            panel5.TabIndex = 0;
             // 
             // VistaDashboard
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1321, 645);
-            Controls.Add(panelGestion);
-            Controls.Add(panelCalorias);
+            Controls.Add(panel3);
             Controls.Add(panel1);
             Name = "VistaDashboard";
             Text = "VistaDashboard";
             Load += VistaDashboard_Load;
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panelCalorias.ResumeLayout(false);
-            panelCalorias.PerformLayout();
-            panelGestion.ResumeLayout(false);
-            panelGestion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvMenuHoy).EndInit();
+            panel3.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private Label lblNombre;
-        private Label lblDieta;
-        private Label lblObjetivo;
-        private Label lblPeso;
-        private Panel panelCalorias;
-        private ProgressBar pbGrasas;
-        private ProgressBar pbCarbohidratos;
-        private ProgressBar pbProteinas;
-        private Label lblCaloriasCirculo;
-        private Label bna;
-        private Label name;
-        private Label mki;
-        private Panel panelGestion;
-        private TextBox txtBuscar;
-        private Button btnBuscar;
-        private ListBox lstAlimentos;
-        private DataGridView dgvMenuHoy;
-        private Button btnAgregar;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel4;
         private Label label2;
         private Label label1;
-        private Label label3;
-        private Button button3;
-        private Button button2;
         private Button button1;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Panel panel5;
     }
 }
