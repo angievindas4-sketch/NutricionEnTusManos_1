@@ -3,7 +3,7 @@ using System.IO;
 using System.Text.Json;
 using NutricionEnTusManos_1.Models;
 
-namespace NutricionEnTusManos_1.Controllers
+namespace NutricionEnTusManos_1.Datos
 {
     // SOLID (SRP): Solo se encarga de la persistencia de datos.
     public class RepositorioUsuarios

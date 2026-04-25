@@ -4,7 +4,7 @@ using System.IO;
 using System.Text.Json;
 using NutricionEnTusManos_1.Models;
 
-namespace NutricionEnTusManos_1.Controllers
+namespace NutricionEnTusManos_1.Datos
 {
     public class RepositorioMenu
     {
