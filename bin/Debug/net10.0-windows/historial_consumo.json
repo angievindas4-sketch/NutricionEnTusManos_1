@@ -462,6 +462,61 @@
         "Proteinas": 26,
         "Carbohidratos": 0,
         "Grasas": 1
+      },
+      {
+        "Nombre": "Pechuga de Pollo",
+        "UnidadMedida": "100g",
+        "Calorias": 165,
+        "Proteinas": 31,
+        "Carbohidratos": 0,
+        "Grasas": 3.6
+      }
+    ]
+  },
+  {
+    "NombreUsuario": "Usuario1",
+    "Fecha": "2026-04-24T00:00:00-06:00",
+    "TiempoComida": null,
+    "Alimentos": [
+      {
+        "Nombre": "Arroz Blanco",
+        "UnidadMedida": null,
+        "Calorias": 130,
+        "Proteinas": 2.7,
+        "Carbohidratos": 28,
+        "Grasas": 0.3
+      },
+      {
+        "Nombre": "Picadillo de Vainica con huevo",
+        "UnidadMedida": null,
+        "Calorias": 140,
+        "Proteinas": 9,
+        "Carbohidratos": 8,
+        "Grasas": 7
+      },
+      {
+        "Nombre": "Gallo Pinto con Natilla",
+        "UnidadMedida": null,
+        "Calorias": 280,
+        "Proteinas": 8,
+        "Carbohidratos": 38,
+        "Grasas": 12
+      },
+      {
+        "Nombre": "Gallo Pinto con Natilla",
+        "UnidadMedida": null,
+        "Calorias": 280,
+        "Proteinas": 8,
+        "Carbohidratos": 38,
+        "Grasas": 12
+      },
+      {
+        "Nombre": "Picadillo de Vainica con huevo",
+        "UnidadMedida": null,
+        "Calorias": 140,
+        "Proteinas": 9,
+        "Carbohidratos": 8,
+        "Grasas": 7
       }
     ]
   }

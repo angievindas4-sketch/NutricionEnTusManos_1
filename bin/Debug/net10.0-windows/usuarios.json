@@ -1,6 +1,6 @@
 [
   {
-    "NombreUsuario": "admin",
+    "NombreUsuario": "Usuario1",
     "Contrasena": "1234",
     "Peso": 80.0,
     "Altura": 1.75,
@@ -11,8 +11,8 @@
     "TipoDieta": "Estándar"
   },
   {
-    "NombreUsuario": "maria_keto",
-    "Contrasena": "maria123",
+    "NombreUsuario": "Usuario2",
+    "Contrasena": "1234",
     "Peso": 65.0,
     "Altura": 1.60,
     "Edad": 30,
@@ -22,8 +22,8 @@
     "TipoDieta": "Keto"
   },
   {
-    "NombreUsuario": "juan_veggie",
-    "Contrasena": "juan789",
+    "NombreUsuario": "Usuario3",
+    "Contrasena": "1234",
     "Peso": 70.0,
     "Altura": 1.80,
     "Edad": 22,
@@ -31,5 +31,247 @@
     "NivelActividad": "Muy Activo",
     "Objetivo": "Mantener",
     "TipoDieta": "Vegetariano"
+  },
+  {
+    "NombreUsuario": "Usuario4",
+    "Contrasena": "1234",
+    "Peso": 90.5,
+    "Altura": 1.85,
+    "Edad": 28,
+    "Sexo": "M",
+    "NivelActividad": "Activo",
+    "Objetivo": "Perder grasa",
+    "TipoDieta": "Estándar"
+  },
+  {
+    "NombreUsuario": "Usuario5",
+    "Contrasena": "1234",
+    "Peso": 55.0,
+    "Altura": 1.55,
+    "Edad": 35,
+    "Sexo": "F",
+    "NivelActividad": "Sedentario",
+    "Objetivo": "Mantener",
+    "TipoDieta": "Keto"
+  },
+  {
+    "NombreUsuario": "Usuario6",
+    "Contrasena": "1234",
+    "Peso": 75.0,
+    "Altura": 1.70,
+    "Edad": 24,
+    "Sexo": "M",
+    "NivelActividad": "Activo",
+    "Objetivo": "Ganar masa",
+    "TipoDieta": "Vegetariano"
+  },
+  {
+    "NombreUsuario": "Usuario7",
+    "Contrasena": "1234",
+    "Peso": 68.0,
+    "Altura": 1.65,
+    "Edad": 29,
+    "Sexo": "F",
+    "NivelActividad": "Moderado",
+    "Objetivo": "Perder grasa",
+    "TipoDieta": "Estándar"
+  },
+  {
+    "NombreUsuario": "Usuario8",
+    "Contrasena": "1234",
+    "Peso": 85.0,
+    "Altura": 1.78,
+    "Edad": 31,
+    "Sexo": "M",
+    "NivelActividad": "Muy Activo",
+    "Objetivo": "Ganar masa",
+    "TipoDieta": "Keto"
+  },
+  {
+    "NombreUsuario": "Usuario9",
+    "Contrasena": "1234",
+    "Peso": 60.0,
+    "Altura": 1.62,
+    "Edad": 27,
+    "Sexo": "F",
+    "NivelActividad": "Activo",
+    "Objetivo": "Mantener",
+    "TipoDieta": "Vegetariano"
+  },
+  {
+    "NombreUsuario": "Usuario10",
+    "Contrasena": "1234",
+    "Peso": 95.0,
+    "Altura": 1.90,
+    "Edad": 33,
+    "Sexo": "M",
+    "NivelActividad": "Sedentario",
+    "Objetivo": "Perder grasa",
+    "TipoDieta": "Estándar"
+  },
+  {
+    "NombreUsuario": "Usuario11",
+    "Contrasena": "1234",
+    "Peso": 52.0,
+    "Altura": 1.58,
+    "Edad": 21,
+    "Sexo": "F",
+    "NivelActividad": "Moderado",
+    "Objetivo": "Ganar masa",
+    "TipoDieta": "Keto"
+  },
+  {
+    "NombreUsuario": "Usuario12",
+    "Contrasena": "1234",
+    "Peso": 77.0,
+    "Altura": 1.73,
+    "Edad": 26,
+    "Sexo": "M",
+    "NivelActividad": "Activo",
+    "Objetivo": "Mantener",
+    "TipoDieta": "Vegetariano"
+  },
+  {
+    "NombreUsuario": "Usuario13",
+    "Contrasena": "1234",
+    "Peso": 63.0,
+    "Altura": 1.67,
+    "Edad": 34,
+    "Sexo": "F",
+    "NivelActividad": "Sedentario",
+    "Objetivo": "Perder grasa",
+    "TipoDieta": "Estándar"
+  },
+  {
+    "NombreUsuario": "Usuario14",
+    "Contrasena": "1234",
+    "Peso": 82.0,
+    "Altura": 1.82,
+    "Edad": 30,
+    "Sexo": "M",
+    "NivelActividad": "Muy Activo",
+    "Objetivo": "Ganar masa",
+    "TipoDieta": "Keto"
+  },
+  {
+    "NombreUsuario": "Usuario15",
+    "Contrasena": "1234",
+    "Peso": 58.0,
+    "Altura": 1.60,
+    "Edad": 23,
+    "Sexo": "F",
+    "NivelActividad": "Activo",
+    "Objetivo": "Mantener",
+    "TipoDieta": "Vegetariano"
+  },
+  {
+    "NombreUsuario": "Usuario16",
+    "Contrasena": "1234",
+    "Peso": 88.0,
+    "Altura": 1.76,
+    "Edad": 32,
+    "Sexo": "M",
+    "NivelActividad": "Moderado",
+    "Objetivo": "Perder grasa",
+    "TipoDieta": "Estándar"
+  },
+  {
+    "NombreUsuario": "Usuario17",
+    "Contrasena": "1234",
+    "Peso": 54.0,
+    "Altura": 1.57,
+    "Edad": 25,
+    "Sexo": "F",
+    "NivelActividad": "Sedentario",
+    "Objetivo": "Ganar masa",
+    "TipoDieta": "Keto"
+  },
+  {
+    "NombreUsuario": "Usuario18",
+    "Contrasena": "1234",
+    "Peso": 72.0,
+    "Altura": 1.79,
+    "Edad": 27,
+    "Sexo": "M",
+    "NivelActividad": "Activo",
+    "Objetivo": "Mantener",
+    "TipoDieta": "Vegetariano"
+  },
+  {
+    "NombreUsuario": "Usuario19",
+    "Contrasena": "1234",
+    "Peso": 66.0,
+    "Altura": 1.64,
+    "Edad": 31,
+    "Sexo": "F",
+    "NivelActividad": "Moderado",
+    "Objetivo": "Perder grasa",
+    "TipoDieta": "Estándar"
+  },
+  {
+    "NombreUsuario": "Usuario20",
+    "Contrasena": "1234",
+    "Peso": 84.0,
+    "Altura": 1.83,
+    "Edad": 29,
+    "Sexo": "M",
+    "NivelActividad": "Muy Activo",
+    "Objetivo": "Ganar masa",
+    "TipoDieta": "Keto"
+  },
+  {
+    "NombreUsuario": "Usuario21",
+    "Contrasena": "1234",
+    "Peso": 59.0,
+    "Altura": 1.61,
+    "Edad": 24,
+    "Sexo": "F",
+    "NivelActividad": "Activo",
+    "Objetivo": "Mantener",
+    "TipoDieta": "Vegetariano"
+  },
+  {
+    "NombreUsuario": "Usuario22",
+    "Contrasena": "1234",
+    "Peso": 92.0,
+    "Altura": 1.88,
+    "Edad": 36,
+    "Sexo": "M",
+    "NivelActividad": "Sedentario",
+    "Objetivo": "Perder grasa",
+    "TipoDieta": "Estándar"
+  },
+  {
+    "NombreUsuario": "Usuario23",
+    "Contrasena": "1234",
+    "Peso": 56.0,
+    "Altura": 1.59,
+    "Edad": 22,
+    "Sexo": "F",
+    "NivelActividad": "Moderado",
+    "Objetivo": "Ganar masa",
+    "TipoDieta": "Keto"
+  },
+  {
+    "NombreUsuario": "Usuario24",
+    "Contrasena": "1234",
+    "Peso": 74.0,
+    "Altura": 1.72,
+    "Edad": 28,
+    "Sexo": "M",
+    "NivelActividad": "Activo",
+    "Objetivo": "Mantener",
+    "TipoDieta": "Vegetariano"
+  },
+  {
+    "NombreUsuario": "Usuario25",
+    "Contrasena": "1234",
+    "Peso": 62.0,
+    "Altura": 1.66,
+    "Edad": 30,
+    "Sexo": "F",
+    "NivelActividad": "Sedentario",
+    "Objetivo": "Perder grasa",
+    "TipoDieta": "Estándar"
   }
 ]

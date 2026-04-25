@@ -7,8 +7,5 @@
     <Compile Update="Views\VistaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\VistaNutricion.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>
