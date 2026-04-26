@@ -2,7 +2,9 @@
 {
     public class Usuario
     {
-        // Bloque 1: Acceso
+        // Bloque 1: Identificación
+        public int Id { get; set; }
+        public string NombreCompleto { get; set; }
         public string NombreUsuario { get; set; }
         public string Contrasena { get; set; }
 
@@ -17,27 +19,29 @@
         public string Objetivo { get; set; }
         public string TipoDieta { get; set; }
 
-        // Constructor vacío (Necesario para JSON)
+        // Constructor vacío (necesario para JSON)
         public Usuario() { }
 
-        // Constructor para Login/Registro básico (Para evitar errores en el código actual)
+        // Constructor para Login básico
         public Usuario(string nombreUsuario, string contrasena)
         {
             NombreUsuario = nombreUsuario;
             Contrasena = contrasena;
         }
 
-        // Constructor completo para el perfil detallado
-        public Usuario(string nombre, string pass, double peso, double altura, int edad, string nivel, string objetivo, string dieta)
+        // Constructor completo
+        public Usuario(string nombreUsuario, string contrasena, double peso, double altura,
+                       int edad, string nivelActividad, string objetivo, string tipoDieta)
         {
-            NombreUsuario = nombre;
-            Contrasena = pass;
+            Id = 0; // se asigna automáticamente al guardar
+            NombreUsuario = nombreUsuario;
+            Contrasena = contrasena;
             Peso = peso;
             Altura = altura;
             Edad = edad;
-            NivelActividad = nivel;
+            NivelActividad = nivelActividad;
             Objetivo = objetivo;
-            TipoDieta = dieta;
+            TipoDieta = tipoDieta;
         }
     }
 }

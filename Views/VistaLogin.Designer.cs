@@ -2,15 +2,8 @@
 {
     partial class VistaLogin
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             label1 = new Label();
@@ -64,6 +53,7 @@
             // txtPassword
             // 
             txtPassword.Location = new Point(178, 216);
+            txtPassword.PasswordChar = '*';
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(263, 31);
             txtPassword.TabIndex = 3;
@@ -86,6 +76,7 @@
             btnRegistrarse.TabIndex = 5;
             btnRegistrarse.Text = "Regístrate";
             btnRegistrarse.UseVisualStyleBackColor = true;
+            btnRegistrarse.Click += btnRegistrarse_Click;
             // 
             // VistaLogin
             // 
@@ -99,7 +90,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "VistaLogin";
-            Text = "VistaLogin";
+            Text = "Nutrición en tus Manos - Iniciar Sesión";
             ResumeLayout(false);
             PerformLayout();
         }

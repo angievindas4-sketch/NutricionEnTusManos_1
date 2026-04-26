@@ -2,15 +2,8 @@
 {
     partial class VistaListaAlimentos
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             btnVolverLista = new Button();
@@ -62,6 +51,7 @@
             btnVolverLista.TabIndex = 0;
             btnVolverLista.Text = "← VOLVER";
             btnVolverLista.UseVisualStyleBackColor = true;
+            btnVolverLista.Click += btnVolverLista_Click;
             // 
             // lblTituloLista
             // 
@@ -115,11 +105,12 @@
             // cmbCategoria
             // 
             cmbCategoria.FormattingEnabled = true;
-            cmbCategoria.Items.AddRange(new object[] { "Frutas", "Verduras", "Carnes", "Lácteos", "Granos", "Otro" });
+            cmbCategoria.Items.AddRange(new object[] { "Todas", "Frutas", "Verduras", "Carnes", "Lácteos", "Granos", "Otro" });
             cmbCategoria.Location = new Point(20, 146);
             cmbCategoria.Name = "cmbCategoria";
             cmbCategoria.Size = new Size(278, 33);
             cmbCategoria.TabIndex = 3;
+            cmbCategoria.SelectedIndex = 0;
             // 
             // btnBuscar
             // 
@@ -129,6 +120,7 @@
             btnBuscar.TabIndex = 4;
             btnBuscar.Text = "BUSCAR";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // gbCatalogo
             // 
@@ -138,71 +130,20 @@
             gbCatalogo.Size = new Size(663, 473);
             gbCatalogo.TabIndex = 3;
             gbCatalogo.TabStop = false;
-            gbCatalogo.Text = "Valores Nutricionales (por 100g)";
+            gbCatalogo.Text = "Valores Nutricionales";
             // 
             // dgvCatalogo
             // 
             dgvCatalogo.AllowUserToAddRows = false;
             dgvCatalogo.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvCatalogo.BackgroundColor = Color.White;
+            dgvCatalogo.BackgroundColor = System.Drawing.Color.White;
             dgvCatalogo.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCatalogo.Columns.AddRange(new DataGridViewColumn[] { colNombre, colCalorias, colProteinas, colCarbos, colGrasas });
             dgvCatalogo.Location = new Point(18, 37);
             dgvCatalogo.Name = "dgvCatalogo";
             dgvCatalogo.RowHeadersVisible = false;
             dgvCatalogo.RowHeadersWidth = 62;
             dgvCatalogo.Size = new Size(639, 429);
             dgvCatalogo.TabIndex = 0;
-            // 
-            // colNombre
-            // 
-            colNombre.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            colNombre.FlatStyle = FlatStyle.Flat;
-            colNombre.HeaderText = "Alimento";
-            colNombre.MinimumWidth = 8;
-            colNombre.Name = "colNombre";
-            colNombre.Resizable = DataGridViewTriState.True;
-            colNombre.SortMode = DataGridViewColumnSortMode.Automatic;
-            // 
-            // colCalorias
-            // 
-            colCalorias.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            colCalorias.FlatStyle = FlatStyle.Flat;
-            colCalorias.HeaderText = "kcal";
-            colCalorias.MinimumWidth = 8;
-            colCalorias.Name = "colCalorias";
-            colCalorias.Resizable = DataGridViewTriState.True;
-            colCalorias.SortMode = DataGridViewColumnSortMode.Automatic;
-            // 
-            // colProteinas
-            // 
-            colProteinas.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            colProteinas.FlatStyle = FlatStyle.Flat;
-            colProteinas.HeaderText = "Proteínas (g)";
-            colProteinas.MinimumWidth = 8;
-            colProteinas.Name = "colProteinas";
-            colProteinas.Resizable = DataGridViewTriState.True;
-            colProteinas.SortMode = DataGridViewColumnSortMode.Automatic;
-            // 
-            // colCarbos
-            // 
-            colCarbos.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            colCarbos.FlatStyle = FlatStyle.Flat;
-            colCarbos.HeaderText = "Carbos (g)";
-            colCarbos.MinimumWidth = 8;
-            colCarbos.Name = "colCarbos";
-            colCarbos.Resizable = DataGridViewTriState.True;
-            colCarbos.SortMode = DataGridViewColumnSortMode.Automatic;
-            // 
-            // colGrasas
-            // 
-            colGrasas.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            colGrasas.FlatStyle = FlatStyle.Flat;
-            colGrasas.HeaderText = "Grasas (g)";
-            colGrasas.MinimumWidth = 8;
-            colGrasas.Name = "colGrasas";
-            colGrasas.Resizable = DataGridViewTriState.True;
-            colGrasas.SortMode = DataGridViewColumnSortMode.Automatic;
             // 
             // gbOpcionesRapidas
             // 
@@ -223,6 +164,7 @@
             btnAgregarRapido.TabIndex = 0;
             btnAgregarRapido.Text = "AGREGAR NUEVO ALIMENTO";
             btnAgregarRapido.UseVisualStyleBackColor = true;
+            btnAgregarRapido.Click += btnAgregarRapido_Click;
             // 
             // btnExportar
             // 
@@ -232,6 +174,7 @@
             btnExportar.TabIndex = 1;
             btnExportar.Text = "EXPORTAR LISTA";
             btnExportar.UseVisualStyleBackColor = true;
+            btnExportar.Click += btnExportar_Click;
             // 
             // btnAgregarCatalogo
             // 
@@ -243,12 +186,13 @@
             btnAgregarCatalogo.TabIndex = 5;
             btnAgregarCatalogo.Text = "AGREGAR NUEVO ALIMENTO AL CATÁLOGO";
             btnAgregarCatalogo.UseVisualStyleBackColor = true;
+            btnAgregarCatalogo.Click += btnAgregarCatalogo_Click;
             // 
             // VistaListaAlimentos
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = System.Drawing.Color.White;
             ClientSize = new Size(1130, 633);
             Controls.Add(btnAgregarCatalogo);
             Controls.Add(gbOpcionesRapidas);

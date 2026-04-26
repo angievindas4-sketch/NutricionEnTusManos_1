@@ -2,15 +2,8 @@
 {
     partial class VistaDashboard
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             panel1 = new Panel();
@@ -87,6 +76,7 @@
             button7.TabIndex = 11;
             button7.Text = "CERRAR SESION";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button5
             // 
@@ -96,6 +86,7 @@
             button5.TabIndex = 9;
             button5.Text = "MI PROGRESO";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -105,6 +96,7 @@
             button4.TabIndex = 8;
             button4.Text = "LISTA DE ALIMENTOS";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -114,6 +106,7 @@
             button3.TabIndex = 7;
             button3.Text = "PLAN ALIMENTICIO";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -277,7 +270,7 @@
             label1.Name = "label1";
             label1.Size = new Size(181, 25);
             label1.TabIndex = 1;
-            label1.Text = "Nombre del Usuario: ";
+            label1.Text = "Nombre del Usuario:";
             // 
             // button1
             // 
@@ -296,7 +289,7 @@
             lblSemaforoIMC.Name = "lblSemaforoIMC";
             lblSemaforoIMC.Size = new Size(120, 120);
             lblSemaforoIMC.TabIndex = 0;
-            lblSemaforoIMC.Text = "24.2";
+            lblSemaforoIMC.Text = "24";
             lblSemaforoIMC.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblEstadoTexto

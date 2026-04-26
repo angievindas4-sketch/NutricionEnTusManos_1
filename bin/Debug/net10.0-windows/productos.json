@@ -1,42 +1,330 @@
 [
-  { "Nombre": "Pechuga de Pollo", "Calorias": 165, "Proteinas": 31, "Carbohidratos": 0, "Grasas": 3.6, "EsKeto": true, "EsVegetariano": false },
-  { "Nombre": "Arroz Blanco", "Calorias": 130, "Proteinas": 2.7, "Carbohidratos": 28, "Grasas": 0.3, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Huevo Entero", "Calorias": 70, "Proteinas": 6, "Carbohidratos": 0.6, "Grasas": 5, "EsKeto": true, "EsVegetariano": true },
-  { "Nombre": "Avena en hojuelas", "Calorias": 190, "Proteinas": 7, "Carbohidratos": 33, "Grasas": 3, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Manzana Verde", "Calorias": 95, "Proteinas": 0.5, "Carbohidratos": 25, "Grasas": 0.3, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Aguacate", "Calorias": 160, "Proteinas": 2, "Carbohidratos": 9, "Grasas": 15, "EsKeto": true, "EsVegetariano": true },
-  { "Nombre": "Leche Descremada", "Calorias": 85, "Proteinas": 8, "Carbohidratos": 12, "Grasas": 0.5, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Atun en agua", "Calorias": 116, "Proteinas": 26, "Carbohidratos": 0, "Grasas": 1, "EsKeto": true, "EsVegetariano": false },
-  { "Nombre": "Platano Maduro", "Calorias": 122, "Proteinas": 1.3, "Carbohidratos": 32, "Grasas": 0.4, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Almendras", "Calorias": 170, "Proteinas": 6, "Carbohidratos": 6, "Grasas": 15, "EsKeto": true, "EsVegetariano": true },
-  { "Nombre": "Gallo Pinto con Natilla", "Calorias": 280, "Proteinas": 8, "Carbohidratos": 38, "Grasas": 12, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Huevo picado con tomate", "Calorias": 160, "Proteinas": 13, "Carbohidratos": 3, "Grasas": 11, "EsKeto": true, "EsVegetariano": true },
-  { "Nombre": "Picadillo de Vainica con huevo", "Calorias": 140, "Proteinas": 9, "Carbohidratos": 8, "Grasas": 7, "EsKeto": true, "EsVegetariano": true },
-  { "Nombre": "Queso Turrialba a la plancha", "Calorias": 210, "Proteinas": 15, "Carbohidratos": 1.5, "Grasas": 16, "EsKeto": true, "EsVegetariano": true },
-  { "Nombre": "Chicharrones de Carne (Keto)", "Calorias": 450, "Proteinas": 28, "Carbohidratos": 0, "Grasas": 38, "EsKeto": true, "EsVegetariano": false },
-  { "Nombre": "Ceviche de Plátano Verde", "Calorias": 120, "Proteinas": 2, "Carbohidratos": 28, "Grasas": 1, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Chifrijo (Sin arroz ni frijol - Versión Keto)", "Calorias": 380, "Proteinas": 22, "Carbohidratos": 5, "Grasas": 30, "EsKeto": true, "EsVegetariano": false },
-  { "Nombre": "Refresco de Cas (Natural)", "Calorias": 45, "Proteinas": 0.5, "Carbohidratos": 11, "Grasas": 0, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Refresco de Chan", "Calorias": 60, "Proteinas": 1, "Carbohidratos": 14, "Grasas": 0.5, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Horchata con leche", "Calorias": 220, "Proteinas": 4, "Carbohidratos": 40, "Grasas": 5, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Agua Dulce", "Calorias": 110, "Proteinas": 0, "Carbohidratos": 28, "Grasas": 0, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Tamal de Elote", "Calorias": 290, "Proteinas": 5, "Carbohidratos": 48, "Grasas": 10, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Chorreada con natilla", "Calorias": 320, "Proteinas": 6, "Carbohidratos": 52, "Grasas": 12, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Empanada de Frijol frita", "Calorias": 280, "Proteinas": 6, "Carbohidratos": 42, "Grasas": 14, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Bistec Encebollado", "Calorias": 240, "Proteinas": 26, "Carbohidratos": 4, "Grasas": 14, "EsKeto": true, "EsVegetariano": false },
-  { "Nombre": "Pescado entero frito (Pargo)", "Calorias": 420, "Proteinas": 35, "Carbohidratos": 5, "Grasas": 28, "EsKeto": true, "EsVegetariano": false },
-  { "Nombre": "Sopa de Quelites", "Calorias": 90, "Proteinas": 4, "Carbohidratos": 10, "Grasas": 3, "EsKeto": true, "EsVegetariano": true },
-  { "Nombre": "Enyucado de Queso", "Calorias": 310, "Proteinas": 9, "Carbohidratos": 45, "Grasas": 12, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Olla de Carne (Sin carne - Sopa de verduras)", "Calorias": 180, "Proteinas": 3, "Carbohidratos": 40, "Grasas": 1, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Rice and Beans (Limón Style)", "Calorias": 350, "Proteinas": 9, "Carbohidratos": 55, "Grasas": 12, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Patí Limonense", "Calorias": 380, "Proteinas": 10, "Carbohidratos": 48, "Grasas": 18, "EsKeto": false, "EsVegetariano": false },
-  { "Nombre": "Plantintá (Plantain Tart)", "Calorias": 320, "Proteinas": 3, "Carbohidratos": 58, "Grasas": 10, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Picadillo de Papaya Verde", "Calorias": 130, "Proteinas": 2, "Carbohidratos": 18, "Grasas": 6, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Pejibaye cocido (2 unidades)", "Calorias": 190, "Proteinas": 3, "Carbohidratos": 25, "Grasas": 9, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Sopa de Albóndigas", "Calorias": 290, "Proteinas": 22, "Carbohidratos": 18, "Grasas": 15, "EsKeto": false, "EsVegetariano": false },
-  { "Nombre": "Pan casero de elote", "Calorias": 240, "Proteinas": 4, "Carbohidratos": 42, "Grasas": 8, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Churchill (Vaso pequeño)", "Calorias": 450, "Proteinas": 2, "Carbohidratos": 85, "Grasas": 12, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Cajeta de Coco", "Calorias": 180, "Proteinas": 1, "Carbohidratos": 30, "Grasas": 8, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Mazamorra", "Calorias": 210, "Proteinas": 2, "Carbohidratos": 45, "Grasas": 4, "EsKeto": false, "EsVegetariano": true },
-  { "Nombre": "Tortilla aliñada con queso", "Calorias": 220, "Proteinas": 8, "Carbohidratos": 28, "Grasas": 9, "EsKeto": false, "EsVegetariano": true }
+  {
+    "Nombre": "Pechuga de Pollo",
+    "UnidadMedida": null,
+    "Calorias": 165,
+    "Proteinas": 31,
+    "Carbohidratos": 0,
+    "Grasas": 3.6
+  },
+  {
+    "Nombre": "Arroz Blanco",
+    "UnidadMedida": null,
+    "Calorias": 130,
+    "Proteinas": 2.7,
+    "Carbohidratos": 28,
+    "Grasas": 0.3
+  },
+  {
+    "Nombre": "Huevo Entero",
+    "UnidadMedida": null,
+    "Calorias": 70,
+    "Proteinas": 6,
+    "Carbohidratos": 0.6,
+    "Grasas": 5
+  },
+  {
+    "Nombre": "Avena en hojuelas",
+    "UnidadMedida": null,
+    "Calorias": 190,
+    "Proteinas": 7,
+    "Carbohidratos": 33,
+    "Grasas": 3
+  },
+  {
+    "Nombre": "Manzana Verde",
+    "UnidadMedida": null,
+    "Calorias": 95,
+    "Proteinas": 0.5,
+    "Carbohidratos": 25,
+    "Grasas": 0.3
+  },
+  {
+    "Nombre": "Aguacate",
+    "UnidadMedida": null,
+    "Calorias": 160,
+    "Proteinas": 2,
+    "Carbohidratos": 9,
+    "Grasas": 15
+  },
+  {
+    "Nombre": "Leche Descremada",
+    "UnidadMedida": null,
+    "Calorias": 85,
+    "Proteinas": 8,
+    "Carbohidratos": 12,
+    "Grasas": 0.5
+  },
+  {
+    "Nombre": "Atun en agua",
+    "UnidadMedida": null,
+    "Calorias": 116,
+    "Proteinas": 26,
+    "Carbohidratos": 0,
+    "Grasas": 1
+  },
+  {
+    "Nombre": "Platano Maduro",
+    "UnidadMedida": null,
+    "Calorias": 122,
+    "Proteinas": 1.3,
+    "Carbohidratos": 32,
+    "Grasas": 0.4
+  },
+  {
+    "Nombre": "Almendras",
+    "UnidadMedida": null,
+    "Calorias": 170,
+    "Proteinas": 6,
+    "Carbohidratos": 6,
+    "Grasas": 15
+  },
+  {
+    "Nombre": "Gallo Pinto con Natilla",
+    "UnidadMedida": null,
+    "Calorias": 280,
+    "Proteinas": 8,
+    "Carbohidratos": 38,
+    "Grasas": 12
+  },
+  {
+    "Nombre": "Huevo picado con tomate",
+    "UnidadMedida": null,
+    "Calorias": 160,
+    "Proteinas": 13,
+    "Carbohidratos": 3,
+    "Grasas": 11
+  },
+  {
+    "Nombre": "Picadillo de Vainica con huevo",
+    "UnidadMedida": null,
+    "Calorias": 140,
+    "Proteinas": 9,
+    "Carbohidratos": 8,
+    "Grasas": 7
+  },
+  {
+    "Nombre": "Queso Turrialba a la plancha",
+    "UnidadMedida": null,
+    "Calorias": 210,
+    "Proteinas": 15,
+    "Carbohidratos": 1.5,
+    "Grasas": 16
+  },
+  {
+    "Nombre": "Chicharrones de Carne (Keto)",
+    "UnidadMedida": null,
+    "Calorias": 450,
+    "Proteinas": 28,
+    "Carbohidratos": 0,
+    "Grasas": 38
+  },
+  {
+    "Nombre": "Ceviche de Pl\u00E1tano Verde",
+    "UnidadMedida": null,
+    "Calorias": 120,
+    "Proteinas": 2,
+    "Carbohidratos": 28,
+    "Grasas": 1
+  },
+  {
+    "Nombre": "Chifrijo (Sin arroz ni frijol - Versi\u00F3n Keto)",
+    "UnidadMedida": null,
+    "Calorias": 380,
+    "Proteinas": 22,
+    "Carbohidratos": 5,
+    "Grasas": 30
+  },
+  {
+    "Nombre": "Refresco de Cas (Natural)",
+    "UnidadMedida": null,
+    "Calorias": 45,
+    "Proteinas": 0.5,
+    "Carbohidratos": 11,
+    "Grasas": 0
+  },
+  {
+    "Nombre": "Refresco de Chan",
+    "UnidadMedida": null,
+    "Calorias": 60,
+    "Proteinas": 1,
+    "Carbohidratos": 14,
+    "Grasas": 0.5
+  },
+  {
+    "Nombre": "Horchata con leche",
+    "UnidadMedida": null,
+    "Calorias": 220,
+    "Proteinas": 4,
+    "Carbohidratos": 40,
+    "Grasas": 5
+  },
+  {
+    "Nombre": "Agua Dulce",
+    "UnidadMedida": null,
+    "Calorias": 110,
+    "Proteinas": 0,
+    "Carbohidratos": 28,
+    "Grasas": 0
+  },
+  {
+    "Nombre": "Tamal de Elote",
+    "UnidadMedida": null,
+    "Calorias": 290,
+    "Proteinas": 5,
+    "Carbohidratos": 48,
+    "Grasas": 10
+  },
+  {
+    "Nombre": "Chorreada con natilla",
+    "UnidadMedida": null,
+    "Calorias": 320,
+    "Proteinas": 6,
+    "Carbohidratos": 52,
+    "Grasas": 12
+  },
+  {
+    "Nombre": "Empanada de Frijol frita",
+    "UnidadMedida": null,
+    "Calorias": 280,
+    "Proteinas": 6,
+    "Carbohidratos": 42,
+    "Grasas": 14
+  },
+  {
+    "Nombre": "Bistec Encebollado",
+    "UnidadMedida": null,
+    "Calorias": 240,
+    "Proteinas": 26,
+    "Carbohidratos": 4,
+    "Grasas": 14
+  },
+  {
+    "Nombre": "Pescado entero frito (Pargo)",
+    "UnidadMedida": null,
+    "Calorias": 420,
+    "Proteinas": 35,
+    "Carbohidratos": 5,
+    "Grasas": 28
+  },
+  {
+    "Nombre": "Sopa de Quelites",
+    "UnidadMedida": null,
+    "Calorias": 90,
+    "Proteinas": 4,
+    "Carbohidratos": 10,
+    "Grasas": 3
+  },
+  {
+    "Nombre": "Enyucado de Queso",
+    "UnidadMedida": null,
+    "Calorias": 310,
+    "Proteinas": 9,
+    "Carbohidratos": 45,
+    "Grasas": 12
+  },
+  {
+    "Nombre": "Olla de Carne (Sin carne - Sopa de verduras)",
+    "UnidadMedida": null,
+    "Calorias": 180,
+    "Proteinas": 3,
+    "Carbohidratos": 40,
+    "Grasas": 1
+  },
+  {
+    "Nombre": "Rice and Beans (Lim\u00F3n Style)",
+    "UnidadMedida": null,
+    "Calorias": 350,
+    "Proteinas": 9,
+    "Carbohidratos": 55,
+    "Grasas": 12
+  },
+  {
+    "Nombre": "Pat\u00ED Limonense",
+    "UnidadMedida": null,
+    "Calorias": 380,
+    "Proteinas": 10,
+    "Carbohidratos": 48,
+    "Grasas": 18
+  },
+  {
+    "Nombre": "Plantint\u00E1 (Plantain Tart)",
+    "UnidadMedida": null,
+    "Calorias": 320,
+    "Proteinas": 3,
+    "Carbohidratos": 58,
+    "Grasas": 10
+  },
+  {
+    "Nombre": "Picadillo de Papaya Verde",
+    "UnidadMedida": null,
+    "Calorias": 130,
+    "Proteinas": 2,
+    "Carbohidratos": 18,
+    "Grasas": 6
+  },
+  {
+    "Nombre": "Pejibaye cocido (2 unidades)",
+    "UnidadMedida": null,
+    "Calorias": 190,
+    "Proteinas": 3,
+    "Carbohidratos": 25,
+    "Grasas": 9
+  },
+  {
+    "Nombre": "Sopa de Alb\u00F3ndigas",
+    "UnidadMedida": null,
+    "Calorias": 290,
+    "Proteinas": 22,
+    "Carbohidratos": 18,
+    "Grasas": 15
+  },
+  {
+    "Nombre": "Pan casero de elote",
+    "UnidadMedida": null,
+    "Calorias": 240,
+    "Proteinas": 4,
+    "Carbohidratos": 42,
+    "Grasas": 8
+  },
+  {
+    "Nombre": "Churchill (Vaso peque\u00F1o)",
+    "UnidadMedida": null,
+    "Calorias": 450,
+    "Proteinas": 2,
+    "Carbohidratos": 85,
+    "Grasas": 12
+  },
+  {
+    "Nombre": "Cajeta de Coco",
+    "UnidadMedida": null,
+    "Calorias": 180,
+    "Proteinas": 1,
+    "Carbohidratos": 30,
+    "Grasas": 8
+  },
+  {
+    "Nombre": "Mazamorra",
+    "UnidadMedida": null,
+    "Calorias": 210,
+    "Proteinas": 2,
+    "Carbohidratos": 45,
+    "Grasas": 4
+  },
+  {
+    "Nombre": "Tortilla ali\u00F1ada con queso",
+    "UnidadMedida": null,
+    "Calorias": 220,
+    "Proteinas": 8,
+    "Carbohidratos": 28,
+    "Grasas": 9
+  },
+  {
+    "Nombre": "Banano",
+    "UnidadMedida": "1 unidad",
+    "Calorias": 89,
+    "Proteinas": 1.1,
+    "Carbohidratos": 22.8,
+    "Grasas": 0.3
+  }
 ]

@@ -2,15 +2,8 @@
 {
     partial class VistaRegistro
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,12 +15,10 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            labelNivelActividad = new Label();
+            comboNivelActividad = new ComboBox();
             groupBox3 = new GroupBox();
             comboBox2 = new ComboBox();
             comboBox1 = new ComboBox();
@@ -71,13 +62,15 @@
             groupBox3.Controls.Add(comboBox1);
             groupBox3.Controls.Add(label8);
             groupBox3.Controls.Add(label7);
+            groupBox3.Controls.Add(labelNivelActividad);
+            groupBox3.Controls.Add(comboNivelActividad);
             groupBox3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox3.Location = new Point(894, 63);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(354, 321);
+            groupBox3.Size = new Size(354, 420);
             groupBox3.TabIndex = 5;
             groupBox3.TabStop = false;
-            groupBox3.Text = "Tus Objtivos";
+            groupBox3.Text = "Tus Objetivos";
             // 
             // comboBox2
             // 
@@ -114,7 +107,31 @@
             label7.Name = "label7";
             label7.Size = new Size(93, 25);
             label7.TabIndex = 0;
-            label7.Text = "Objetivo: ";
+            label7.Text = "Objetivo:";
+            // 
+            // labelNivelActividad
+            // 
+            labelNivelActividad.AutoSize = true;
+            labelNivelActividad.Location = new Point(16, 280);
+            labelNivelActividad.Name = "labelNivelActividad";
+            labelNivelActividad.Size = new Size(140, 25);
+            labelNivelActividad.TabIndex = 4;
+            labelNivelActividad.Text = "Nivel de actividad:";
+            // 
+            // comboNivelActividad
+            // 
+            comboNivelActividad.FormattingEnabled = true;
+            comboNivelActividad.Items.AddRange(new object[] {
+                "Sedentario",
+                "Ligero (1-3 días/semana)",
+                "Moderado (3-5 días/semana)",
+                "Activo (6-7 días/semana)",
+                "Muy activo (atleta)"
+            });
+            comboNivelActividad.Location = new Point(16, 310);
+            comboNivelActividad.Name = "comboNivelActividad";
+            comboNivelActividad.Size = new Size(325, 33);
+            comboNivelActividad.TabIndex = 5;
             // 
             // groupBox2
             // 
@@ -173,6 +190,9 @@
             // nunEdad
             // 
             nunEdad.Location = new Point(156, 170);
+            nunEdad.Minimum = 1;
+            nunEdad.Maximum = 120;
+            nunEdad.Value = 25;
             nunEdad.Name = "nunEdad";
             nunEdad.Size = new Size(154, 31);
             nunEdad.TabIndex = 4;
@@ -180,6 +200,10 @@
             // numPeso
             // 
             numPeso.Location = new Point(156, 113);
+            numPeso.Minimum = 30;
+            numPeso.Maximum = 300;
+            numPeso.DecimalPlaces = 1;
+            numPeso.Value = 70;
             numPeso.Name = "numPeso";
             numPeso.Size = new Size(154, 31);
             numPeso.TabIndex = 3;
@@ -200,7 +224,7 @@
             label5.Name = "label5";
             label5.Size = new Size(61, 25);
             label5.TabIndex = 1;
-            label5.Text = "Edad: ";
+            label5.Text = "Edad:";
             // 
             // label4
             // 
@@ -231,6 +255,7 @@
             // txtPassword
             // 
             txtPassword.Location = new Point(209, 193);
+            txtPassword.PasswordChar = '*';
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(297, 31);
             txtPassword.TabIndex = 3;
@@ -284,7 +309,7 @@
             groupBox4.Controls.Add(groupBox2);
             groupBox4.Location = new Point(12, 12);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(1254, 495);
+            groupBox4.Size = new Size(1254, 590);
             groupBox4.TabIndex = 1;
             groupBox4.TabStop = false;
             groupBox4.Text = "CREAR CUENTA DE USUARIO";
@@ -324,11 +349,15 @@
             label9.Name = "label9";
             label9.Size = new Size(72, 25);
             label9.TabIndex = 8;
-            label9.Text = "Altura: ";
+            label9.Text = "Altura (cm):";
             // 
             // numAltura
             // 
             numAltura.Location = new Point(156, 60);
+            numAltura.Minimum = 100;
+            numAltura.Maximum = 250;
+            numAltura.DecimalPlaces = 0;
+            numAltura.Value = 170;
             numAltura.Name = "numAltura";
             numAltura.Size = new Size(154, 31);
             numAltura.TabIndex = 9;
@@ -385,5 +414,7 @@
         private Button btnFinalizarRegistro;
         private Label label9;
         private NumericUpDown numAltura;
+        private Label labelNivelActividad;
+        private ComboBox comboNivelActividad;
     }
 }

@@ -12,37 +12,45 @@ namespace NutricionEnTusManos_1.Controllers
         public ControladorLogin()
         {
             _gestorUsuario = new ControladorUsuario();
-            // Refrescamos la lista siempre al iniciar para tener datos actuales del JSON
             _listaUsuarios = _gestorUsuario.CargarUsuarios();
         }
 
-        // NUEVO MÉTODO: Devuelve el objeto Usuario completo si existe, o null si no.
+        /// <summary>
+        /// Devuelve el objeto Usuario completo si las credenciales son correctas, null si no
+        /// </summary>
         public Usuario ObtenerUsuario(string nombre, string contrasena)
         {
-            // Buscamos en la lista el usuario que coincida con ambos datos
-            return _listaUsuarios.FirstOrDefault(u => u.NombreUsuario == nombre && u.Contrasena == contrasena);
+            // Recarga siempre del archivo para tener datos actualizados
+            _listaUsuarios = _gestorUsuario.CargarUsuarios();
+            return _listaUsuarios.FirstOrDefault(u =>
+                u.NombreUsuario == nombre &&
+                u.Contrasena == contrasena);
         }
 
+        /// <summary>
+        /// Valida si las credenciales existen en el sistema
+        /// </summary>
         public bool ValidarLogin(string nombre, string contrasena)
         {
-            return _listaUsuarios.Any(u => u.NombreUsuario == nombre && u.Contrasena == contrasena);
+            // Recarga siempre del archivo para tener datos actualizados
+            _listaUsuarios = _gestorUsuario.CargarUsuarios();
+            return _listaUsuarios.Any(u =>
+                u.NombreUsuario == nombre &&
+                u.Contrasena == contrasena);
         }
 
-        public bool Registrar(string nombre, string contrasena)
+        /// <summary>
+        /// Registra un usuario completo con todos sus datos de perfil
+        /// </summary>
+        public bool Registrar(Usuario nuevoUsuario)
         {
-            if (_listaUsuarios.Any(u => u.NombreUsuario == nombre)) return false;
+            // Recarga para verificar datos más recientes antes de registrar
+            _listaUsuarios = _gestorUsuario.CargarUsuarios();
 
-            Usuario nuevo = new Usuario
-            {
-                NombreUsuario = nombre,
-                Contrasena = contrasena,
-                // Valores por defecto para nuevos registros
-                Peso = 0,
-                Altura = 0,
-                Objetivo = "No definido"
-            };
+            if (_listaUsuarios.Any(u => u.NombreUsuario == nuevoUsuario.NombreUsuario))
+                return false;
 
-            _listaUsuarios.Add(nuevo);
+            _listaUsuarios.Add(nuevoUsuario);
             _gestorUsuario.GuardarUsuarios(_listaUsuarios);
             return true;
         }

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing; // Necesario para Pen, Brushes y Color
-using System.Linq;
 using System.Windows.Forms;
 using NutricionEnTusManos_1.Controllers;
 using NutricionEnTusManos_1.Models;
@@ -13,135 +10,102 @@ namespace NutricionEnTusManos_1.Views
         private readonly ControladorDashboard _controlador;
         private Usuario _usuarioActual;
 
-        // --- CONSTRUCTOR ÚNICO ---
         public VistaDashboard(Usuario usuario)
         {
             InitializeComponent();
             _usuarioActual = usuario;
             _controlador = new ControladorDashboard(_usuarioActual);
-
-            this.Text = "Dashboard Nutricional - " + _usuarioActual.NombreUsuario;
-
-            // Carga los datos apenas se crea la ventana
             CargarDatosDashboard();
         }
 
-        // --- MÉTODO DE CARGA DE DATOS ---
         private void CargarDatosDashboard()
         {
             try
             {
-                // 1. Datos del Perfil (Bloque izquierdo superior)
-                lblNombre.Text = $"Usuario: {_usuarioActual.NombreUsuario}";
-                lblPeso.Text = $"Peso: {_usuarioActual.Peso} kg";
-                lblObjetivo.Text = $"Objetivo: {_usuarioActual.Objetivo}";
-                lblDieta.Text = $"Plan: {_usuarioActual.TipoDieta}";
+                // Datos del perfil
+                label1.Text = $"Nombre del Usuario: {_usuarioActual.NombreUsuario}";
+                label2.Text = $"ID Usuario: {_usuarioActual.Id}";
 
-                // 2. Cálculo de Calorías y Macros
-                var totales = _controlador.CalcularTotalesHoy();
-                lblCaloriasCirculo.Text = $"{totales.cal}\n/ 2000 kcal";
+                // Datos físicos
+                label3.Text = $"PESO ACTUAL: {_usuarioActual.Peso} kg";
+                label4.Text = $"ESTATURA: {_usuarioActual.Altura} cm";
+                label5.Text = $"EDAD: {_usuarioActual.Edad} años";
 
-                // Barras de progreso
-                pbProteinas.Value = (int)Math.Min(totales.prot, 100);
-                pbCarbohidratos.Value = (int)Math.Min(totales.carb, 100);
-                pbGrasas.Value = (int)Math.Min(totales.grasa, 100);
+                // IMC
+                double imc = _controlador.CalcularIMC();
+                label6.Text = $"IMC: {imc:F1}";
+                lblSemaforoIMC.Text = $"{imc:F0}"; // sin decimales en el semáforo
 
-                // 3. Tabla de consumidos (DataGridView)
-                var consumidos = _controlador.ObtenerConsumoHoy();
-                dgvMenuHoy.DataSource = null;
-                dgvMenuHoy.DataSource = consumidos.SelectMany(m => m.Alimentos).ToList();
+                // Estado del IMC
+                string estado = _controlador.ObtenerEstadoIMC(imc);
+                label7.Text = $"({estado})";
+                lblEstadoTexto.Text = $"Estado: {estado}";
 
-                // 4. CARGA DE LA LISTA DE SELECCIÓN (Estilo mejorado)
-                var todosLosProductos = _controlador.BuscarAlimentos("");
+                // Color del semáforo
+                lblSemaforoIMC.BackColor = _controlador.ObtenerColorIMC(imc);
 
-                lstAlimentos.DataSource = null;
-
-                if (todosLosProductos != null && todosLosProductos.Count > 0)
-                {
-                    lstAlimentos.DisplayMember = "Nombre";
-                    lstAlimentos.ValueMember = "Nombre";
-                    lstAlimentos.DataSource = todosLosProductos;
-
-                    lstAlimentos.SelectedIndex = -1;
-                    lstAlimentos.Refresh();
-                }
+                // Barra de calorías
+                double porcentaje = _controlador.ObtenerPorcentajeCaloriasHoy();
+                pbCaloriasDiarias.Value = (int)Math.Min(porcentaje, 100);
+                lblPorcentajeCalorias.Text = $"{porcentaje:F0}% DE TU META DIARIA CONSUMIDA";
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar datos en el Dashboard: " + ex.Message);
+                MessageBox.Show("Error al cargar datos: " + ex.Message);
             }
         }
 
-        // --- DIBUJO PERSONALIZADO DE LA LISTA (Estilo App Moderna) ---
-        private void lstAlimentos_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            if (e.Index < 0) return;
-
-            // Dibujamos el fondo (cambia de color al seleccionar)
-            e.DrawBackground();
-
-            // Color de la línea divisoria sutil
-            Pen pen = new Pen(Color.LightGray, 1);
-
-            // Dibujamos el texto del alimento
-            // Usamos un pequeño margen (X + 5, Y + 5) para que no esté pegado al borde
-            string texto = ((Producto)lstAlimentos.Items[e.Index]).Nombre;
-            e.Graphics.DrawString(texto, e.Font, Brushes.Black, e.Bounds.X + 5, e.Bounds.Y + 5);
-
-            // Dibujamos la línea al fondo de cada celda para crear las divisiones
-            e.Graphics.DrawLine(pen, e.Bounds.Left, e.Bounds.Bottom - 1, e.Bounds.Right, e.Bounds.Bottom - 1);
-
-            e.DrawFocusRectangle();
-        }
-
-        // --- EVENTOS DE LA INTERFAZ ---
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                var resultados = _controlador.BuscarAlimentos(txtBuscar.Text);
-                lstAlimentos.DataSource = null;
-                lstAlimentos.DataSource = resultados;
-                lstAlimentos.DisplayMember = "Nombre";
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error al buscar: " + ex.Message);
-            }
-        }
-
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            if (lstAlimentos.SelectedItem is Producto alimentoSeleccionado)
-            {
-                _controlador.AgregarAlimentoAlMenu(alimentoSeleccionado);
-                CargarDatosDashboard();
-                MessageBox.Show($"{alimentoSeleccionado.Nombre} añadido correctamente.");
-            }
-            else
-            {
-                MessageBox.Show("Por favor, selecciona un alimento de la lista primero.");
-            }
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            txtBuscar.Clear();
-        }
-
-        // Métodos auxiliares
-        private void panelGestion_Paint(object sender, PaintEventArgs e) { }
-        private void label3_Click(object sender, EventArgs e) { }
-        private void VistaDashboard_Load(object sender, EventArgs e) { }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // --- BOTONES DEL MENÚ LATERAL ---
         private void button2_Click(object sender, EventArgs e)
         {
-
+            // MI PERFIL - por ahora muestra datos en un MessageBox
+            MessageBox.Show(
+                $"Nombre: {_usuarioActual.NombreCompleto}\n" +
+                $"Usuario: {_usuarioActual.NombreUsuario}\n" +
+                $"Peso: {_usuarioActual.Peso} kg\n" +
+                $"Altura: {_usuarioActual.Altura} cm\n" +
+                $"Edad: {_usuarioActual.Edad} años\n" +
+                $"Sexo: {_usuarioActual.Sexo}\n" +
+                $"Objetivo: {_usuarioActual.Objetivo}\n" +
+                $"Dieta: {_usuarioActual.TipoDieta}\n" +
+                $"Nivel de actividad: {_usuarioActual.NivelActividad}",
+                "Mi Perfil");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // PLAN ALIMENTICIO
+            VistaPlanAlimenticio plan = new VistaPlanAlimenticio(_usuarioActual);
+            plan.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // LISTA DE ALIMENTOS
+            VistaListaAlimentos lista = new VistaListaAlimentos();
+            lista.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // MI PROGRESO
+            VistaProgreso progreso = new VistaProgreso(_usuarioActual);
+            progreso.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            // CERRAR SESIÓN
+            var confirmar = MessageBox.Show("¿Seguro que deseas cerrar sesión?",
+                "Cerrar sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirmar == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void VistaDashboard_Load(object sender, EventArgs e) { }
+        private void label5_Click(object sender, EventArgs e) { }
     }
 }

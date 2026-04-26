@@ -2,15 +2,8 @@
 {
     partial class VistaPlanAlimenticio
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             lblTituloPlan = new Label();
@@ -82,6 +71,7 @@
             btnBuscar.TabIndex = 1;
             btnBuscar.Text = "BUSCAR";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // txtBuscarAlimento
             // 
@@ -111,6 +101,7 @@
             btnCena.TabIndex = 3;
             btnCena.Text = "CENA";
             btnCena.UseVisualStyleBackColor = true;
+            btnCena.Click += btnCena_Click;
             // 
             // btnMeriendas
             // 
@@ -120,6 +111,7 @@
             btnMeriendas.TabIndex = 2;
             btnMeriendas.Text = "MERIENDAS";
             btnMeriendas.UseVisualStyleBackColor = true;
+            btnMeriendas.Click += btnMeriendas_Click;
             // 
             // btnAlmuerzo
             // 
@@ -129,6 +121,7 @@
             btnAlmuerzo.TabIndex = 1;
             btnAlmuerzo.Text = "ALMUERZO";
             btnAlmuerzo.UseVisualStyleBackColor = true;
+            btnAlmuerzo.Click += btnAlmuerzo_Click;
             // 
             // btnDesayuno
             // 
@@ -138,6 +131,7 @@
             btnDesayuno.TabIndex = 0;
             btnDesayuno.Text = "DESAYUNO";
             btnDesayuno.UseVisualStyleBackColor = true;
+            btnDesayuno.Click += btnDesayuno_Click;
             // 
             // gbDetalle
             // 
@@ -162,6 +156,7 @@
             dgvPlan.RowHeadersWidth = 62;
             dgvPlan.Size = new Size(1169, 243);
             dgvPlan.TabIndex = 0;
+            dgvPlan.CellClick += dgvPlan_CellClick;
             // 
             // colAlimento
             // 
@@ -192,7 +187,7 @@
             colAccion.Name = "colAccion";
             colAccion.Resizable = DataGridViewTriState.True;
             colAccion.SortMode = DataGridViewColumnSortMode.Automatic;
-            colAccion.Text = "📝 Editar  🗑️ Borrar";
+            colAccion.Text = "✏️ Editar | 🗑️ Eliminar\"";
             colAccion.UseColumnTextForButtonValue = true;
             // 
             // lblTotalCalorias
@@ -204,7 +199,7 @@
             lblTotalCalorias.Name = "lblTotalCalorias";
             lblTotalCalorias.Size = new Size(376, 28);
             lblTotalCalorias.TabIndex = 4;
-            lblTotalCalorias.Text = "TOTAL CALORÍAS DESAYUNO: 260 kcal";
+            lblTotalCalorias.Text = "TOTAL CALORÍAS DESAYUNO: 0 kcal";
             // 
             // btnVolver
             // 
@@ -216,6 +211,7 @@
             btnVolver.TabIndex = 5;
             btnVolver.Text = "← VOLVER";
             btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
             // 
             // dtpFechaPlan
             // 
@@ -225,6 +221,7 @@
             dtpFechaPlan.Name = "dtpFechaPlan";
             dtpFechaPlan.Size = new Size(151, 31);
             dtpFechaPlan.TabIndex = 6;
+            dtpFechaPlan.ValueChanged += dtpFechaPlan_ValueChanged;
             // 
             // label1
             // 
