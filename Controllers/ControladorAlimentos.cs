@@ -35,7 +35,7 @@ namespace NutricionEnTusManos_1.Controllers
                 return todos;
 
             return todos
-                .Where(p => p.Nombre.ToLower().Contains(filtro.ToLower()))
+                .Where(p => p.Nombre.ToLower().StartsWith(filtro.ToLower()))
                 .ToList();
         }
 

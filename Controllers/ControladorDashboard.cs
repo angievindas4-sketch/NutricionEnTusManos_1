@@ -13,8 +13,40 @@ namespace NutricionEnTusManos_1.Controllers
         private readonly RepositorioProducto _repoProductos;
         private Usuario _usuarioActual;
 
-        // Meta calórica diaria base (se puede hacer dinámica después)
-        private const double MetaCaloriasDiaria = 2000;
+        private double MetaCaloriasDiaria => CalcularMetaCalorias();
+
+        private double CalcularMetaCalorias()
+        {
+            double tmb;
+            if (_usuarioActual.Sexo == "Masculino")
+                tmb = 10 * _usuarioActual.Peso + 6.25 * _usuarioActual.Altura - 5 * _usuarioActual.Edad + 5;
+            else
+                tmb = 10 * _usuarioActual.Peso + 6.25 * _usuarioActual.Altura - 5 * _usuarioActual.Edad - 161;
+
+            double factor = _usuarioActual.NivelActividad switch
+            {
+                "Sedentario" => 1.2,
+                "Ligero (1-3 días/semana)" => 1.375,
+                "Moderado (3-5 días/semana)" => 1.55,
+                "Activo (6-7 días/semana)" => 1.725,
+                "Muy activo (atleta)" => 1.9,
+                _ => 1.2
+            };
+
+            double tdee = tmb * factor;
+
+            return _usuarioActual.Objetivo switch
+            {
+                "Perder Peso" => tdee - 500,
+                "Ganar Masa" => tdee + 300,
+                _ => tdee
+            };
+        }
+
+        /// <summary>
+        /// Expone la meta calórica diaria calculada para uso en las vistas
+        /// </summary>
+        public double ObtenerMetaCaloriasDiaria() => MetaCaloriasDiaria;
 
         public ControladorDashboard(Usuario usuario)
         {
@@ -23,10 +55,8 @@ namespace NutricionEnTusManos_1.Controllers
             _repoProductos = new RepositorioProducto();
         }
 
-        // 1. Obtener el perfil del usuario
         public Usuario ObtenerPerfil() => _usuarioActual;
 
-        // 2. Obtener consumo de hoy
         public List<MenuDiario> ObtenerConsumoHoy()
         {
             var todoElHistorial = _repoMenu.ObtenerTodos();
@@ -36,7 +66,6 @@ namespace NutricionEnTusManos_1.Controllers
                 .ToList();
         }
 
-        // 3. Calcular totales de macros de hoy
         public (double cal, double prot, double carb, double grasa) CalcularTotalesHoy()
         {
             var comidasHoy = ObtenerConsumoHoy();
@@ -44,16 +73,15 @@ namespace NutricionEnTusManos_1.Controllers
 
             foreach (var menu in comidasHoy)
             {
-                tCal += menu.Alimentos.Sum(a => a.Calorias);
-                tProt += menu.Alimentos.Sum(a => a.Proteinas);
-                tCarb += menu.Alimentos.Sum(a => a.Carbohidratos);
-                tGrasa += menu.Alimentos.Sum(a => a.Grasas);
+                tCal += menu.Alimentos.Sum(a => a.Calorias * a.Cantidad);
+                tProt += menu.Alimentos.Sum(a => a.Proteinas * a.Cantidad);
+                tCarb += menu.Alimentos.Sum(a => a.Carbohidratos * a.Cantidad);
+                tGrasa += menu.Alimentos.Sum(a => a.Grasas * a.Cantidad);
             }
 
             return (tCal, tProt, tCarb, tGrasa);
         }
 
-        // 4. Buscar alimentos por filtro
         public List<Producto> BuscarAlimentos(string filtro)
         {
             var todos = _repoProductos.ObtenerTodos();
@@ -61,7 +89,6 @@ namespace NutricionEnTusManos_1.Controllers
             return todos.Where(p => p.Nombre.ToLower().Contains(filtro.ToLower())).ToList();
         }
 
-        // 5. Agregar alimento al menú de hoy
         public void AgregarAlimentoAlMenu(Producto producto)
         {
             var historial = _repoMenu.ObtenerTodos();
@@ -84,7 +111,6 @@ namespace NutricionEnTusManos_1.Controllers
             _repoMenu.GuardarTodos(historial);
         }
 
-        // 6. Calcular IMC del usuario actual
         public double CalcularIMC()
         {
             if (_usuarioActual.Altura <= 0) return 0;
@@ -92,7 +118,6 @@ namespace NutricionEnTusManos_1.Controllers
             return _usuarioActual.Peso / (alturaMetros * alturaMetros);
         }
 
-        // 7. Obtener estado del IMC en texto
         public string ObtenerEstadoIMC(double imc)
         {
             if (imc < 18.5) return "Bajo peso";
@@ -101,7 +126,6 @@ namespace NutricionEnTusManos_1.Controllers
             return "Obesidad";
         }
 
-        // 8. Obtener color del semáforo según IMC
         public Color ObtenerColorIMC(double imc)
         {
             if (imc < 18.5) return Color.DodgerBlue;
@@ -110,7 +134,6 @@ namespace NutricionEnTusManos_1.Controllers
             return Color.Red;
         }
 
-        // 9. Obtener porcentaje de calorías consumidas hoy vs meta
         public double ObtenerPorcentajeCaloriasHoy()
         {
             var totales = CalcularTotalesHoy();

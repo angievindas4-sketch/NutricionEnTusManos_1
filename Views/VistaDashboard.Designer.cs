@@ -154,7 +154,7 @@
             label9.Name = "label9";
             label9.Size = new Size(214, 25);
             label9.TabIndex = 0;
-            label9.Text = "META DIARIA: 2000 KCAL";
+            label9.Text = "META DIARIA: ";
             // 
             // tableLayoutPanel1
             // 
@@ -280,6 +280,7 @@
             button1.TabIndex = 0;
             button1.Text = "Actualizar Perfil";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // lblSemaforoIMC
             // 

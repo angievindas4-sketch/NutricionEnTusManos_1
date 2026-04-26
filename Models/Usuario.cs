@@ -13,6 +13,8 @@
         public double Altura { get; set; }
         public int Edad { get; set; }
         public string Sexo { get; set; }
+        public double PesoInicial { get; set; }
+        public double PesoMeta { get; set; }
 
         // Bloque 3: Hábitos y Objetivos
         public string NivelActividad { get; set; }
@@ -33,12 +35,15 @@
         public Usuario(string nombreUsuario, string contrasena, double peso, double altura,
                        int edad, string nivelActividad, string objetivo, string tipoDieta)
         {
-            Id = 0; // se asigna automáticamente al guardar
+            Id = 0;
             NombreUsuario = nombreUsuario;
             Contrasena = contrasena;
             Peso = peso;
             Altura = altura;
             Edad = edad;
+            PesoInicial = peso; // al registrarse el peso inicial = peso actual
+            PesoMeta = objetivo == "Perder Peso" ? peso - 10 :
+                       objetivo == "Ganar Masa" ? peso + 10 : peso;
             NivelActividad = nivelActividad;
             Objetivo = objetivo;
             TipoDieta = tipoDieta;

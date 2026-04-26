@@ -15,6 +15,9 @@ namespace NutricionEnTusManos_1.Views
         private string _tiempoSeleccionado = "Desayuno";
         private List<Producto> _resultadosBusqueda = new List<Producto>();
 
+        // ListBox para sugerencias en tiempo real
+        private ListBox _listaSugerencias;
+
         public VistaPlanAlimenticio(Usuario usuario)
         {
             InitializeComponent();
@@ -24,6 +27,53 @@ namespace NutricionEnTusManos_1.Views
             dtpFechaPlan.Value = DateTime.Today;
             SeleccionarTiempo("Desayuno");
             CargarPlanDelDia();
+            ConfigurarBusquedaEnTiempoReal();
+        }
+
+        /// <summary>
+        /// Configura el ListBox de sugerencias flotante debajo del TextBox
+        /// </summary>
+        private void ConfigurarBusquedaEnTiempoReal()
+        {
+            _listaSugerencias = new ListBox
+            {
+                Location = new System.Drawing.Point(
+                    txtBuscarAlimento.Left + gbBusqueda.Left,
+                    txtBuscarAlimento.Bottom + gbBusqueda.Top + 30),
+                Size = new System.Drawing.Size(txtBuscarAlimento.Width, 150),
+                Visible = false,
+                Font = new System.Drawing.Font("Segoe UI", 9F)
+            };
+
+            this.Controls.Add(_listaSugerencias);
+            _listaSugerencias.BringToFront();
+
+            // Evento mientras escribe
+            txtBuscarAlimento.TextChanged += (s, e) =>
+            {
+                string texto = txtBuscarAlimento.Text.Trim();
+                if (string.IsNullOrWhiteSpace(texto))
+                {
+                    _listaSugerencias.Visible = false;
+                    return;
+                }
+
+                var resultados = _controladorAlimentos.Buscar(texto);
+                _listaSugerencias.Items.Clear();
+
+                foreach (var p in resultados.Take(8))
+                    _listaSugerencias.Items.Add(p.Nombre);
+
+                _listaSugerencias.Visible = _listaSugerencias.Items.Count > 0;
+            };
+
+            // Al seleccionar una sugerencia
+            _listaSugerencias.Click += (s, e) =>
+            {
+                if (_listaSugerencias.SelectedItem == null) return;
+                txtBuscarAlimento.Text = _listaSugerencias.SelectedItem.ToString();
+                _listaSugerencias.Visible = false;
+            };
         }
 
         private void SeleccionarTiempo(string tiempo)
@@ -46,11 +96,11 @@ namespace NutricionEnTusManos_1.Views
                 dgvPlan.Rows.Clear();
                 foreach (var p in alimentos)
                 {
-                    dgvPlan.Rows.Add(p.Nombre, p.UnidadMedida, $"{p.Calorias} kcal");
+                    dgvPlan.Rows.Add(p.Nombre, $"{p.Cantidad} {p.UnidadMedida}", $"{p.Calorias * p.Cantidad:F0} kcal");
                 }
 
-                double total = alimentos.Sum(a => a.Calorias);
-                lblTotalCalorias.Text = $"TOTAL CALORÍAS {_tiempoSeleccionado.ToUpper()}: {total} kcal";
+                double total = alimentos.Sum(a => a.Calorias * a.Cantidad);
+                lblTotalCalorias.Text = $"TOTAL CALORÍAS {_tiempoSeleccionado.ToUpper()}: {total:F0} kcal";
             }
             catch (Exception ex)
             {
@@ -71,6 +121,7 @@ namespace NutricionEnTusManos_1.Views
                 }
 
                 _resultadosBusqueda = _controladorAlimentos.Buscar(filtro);
+                _listaSugerencias.Visible = false;
 
                 if (_resultadosBusqueda.Count == 0)
                 {
@@ -129,12 +180,32 @@ namespace NutricionEnTusManos_1.Views
                 if (dgv.SelectedRows.Count > 0)
                 {
                     var productoSeleccionado = resultados[dgv.SelectedRows[0].Index];
+
+                    Form frmCantidad = new Form
+                    {
+                        Text = "Cantidad",
+                        Size = new System.Drawing.Size(300, 150),
+                        StartPosition = FormStartPosition.CenterParent,
+                        FormBorderStyle = FormBorderStyle.FixedDialog,
+                        MaximizeBox = false
+                    };
+                    var lblCant = new Label { Text = $"¿Cuántas unidades de {productoSeleccionado.Nombre}?", Location = new System.Drawing.Point(20, 15), AutoSize = true };
+                    var numCant = new NumericUpDown { Location = new System.Drawing.Point(20, 45), Size = new System.Drawing.Size(100, 30), Minimum = 1, Maximum = 20, Value = 1 };
+                    var btnOk = new Button { Text = "OK", Location = new System.Drawing.Point(130, 45), Size = new System.Drawing.Size(80, 30) };
+                    btnOk.Click += (sb, eb) => frmCantidad.Close();
+                    frmCantidad.Controls.AddRange(new System.Windows.Forms.Control[] { lblCant, numCant, btnOk });
+                    frmCantidad.ShowDialog();
+
+                    productoSeleccionado.Cantidad = (double)numCant.Value;
+
                     _controladorMenu.AgregarAlimento(
                         dtpFechaPlan.Value.Date,
                         _tiempoSeleccionado,
                         productoSeleccionado);
-                    MessageBox.Show($"{productoSeleccionado.Nombre} agregado al {_tiempoSeleccionado}.",
+
+                    MessageBox.Show($"{productoSeleccionado.Nombre} x{productoSeleccionado.Cantidad} agregado al {_tiempoSeleccionado}.",
                         "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     frmResultados.Close();
                     CargarPlanDelDia();
                 }
@@ -166,26 +237,29 @@ namespace NutricionEnTusManos_1.Views
                     Form frmEditar = new Form
                     {
                         Text = "Editar cantidad",
-                        Size = new System.Drawing.Size(350, 180),
+                        Size = new System.Drawing.Size(300, 150),
                         StartPosition = FormStartPosition.CenterParent,
                         FormBorderStyle = FormBorderStyle.FixedDialog,
                         MaximizeBox = false
                     };
 
-                    var lbl = new Label { Text = $"Nueva cantidad para {nombreAlimento}:", Location = new System.Drawing.Point(20, 20), AutoSize = true };
-                    var txt = new TextBox { Location = new System.Drawing.Point(20, 50), Size = new System.Drawing.Size(290, 30), Text = dgvPlan.Rows[e.RowIndex].Cells["colCantidad"].Value?.ToString() ?? "" };
-                    var btnGuardar = new Button { Text = "GUARDAR", Location = new System.Drawing.Point(100, 95), Size = new System.Drawing.Size(130, 35) };
+                    var lbl = new Label { Text = $"Nueva cantidad para {nombreAlimento}:", Location = new System.Drawing.Point(20, 15), AutoSize = true };
+                    var numCant = new NumericUpDown { Location = new System.Drawing.Point(20, 45), Size = new System.Drawing.Size(100, 30), Minimum = 1, Maximum = 50, Value = 1 };
+                    var btnOk = new Button { Text = "GUARDAR", Location = new System.Drawing.Point(130, 45), Size = new System.Drawing.Size(100, 30) };
 
-                    btnGuardar.Click += (s, ev) =>
+                    btnOk.Click += (s, ev) =>
                     {
-                        if (!string.IsNullOrWhiteSpace(txt.Text))
-                        {
-                            dgvPlan.Rows[e.RowIndex].Cells["colCantidad"].Value = txt.Text;
-                            frmEditar.Close();
-                        }
+                        _controladorMenu.ActualizarCantidadAlimento(
+                            dtpFechaPlan.Value.Date,
+                            _tiempoSeleccionado,
+                            nombreAlimento,
+                            (double)numCant.Value);
+
+                        frmEditar.Close();
+                        CargarPlanDelDia();
                     };
 
-                    frmEditar.Controls.AddRange(new System.Windows.Forms.Control[] { lbl, txt, btnGuardar });
+                    frmEditar.Controls.AddRange(new System.Windows.Forms.Control[] { lbl, numCant, btnOk });
                     frmEditar.ShowDialog();
                 }
                 else if (opcion == DialogResult.No)

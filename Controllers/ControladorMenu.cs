@@ -102,5 +102,26 @@ namespace NutricionEnTusManos_1.Controllers
             var menus = ObtenerMenuDelDia(fecha);
             return menus.SelectMany(m => m.Alimentos).Sum(a => a.Calorias);
         }
+
+        /// <summary>
+        /// Actualiza la cantidad de un alimento en el menú
+        /// </summary>
+        public void ActualizarCantidadAlimento(DateTime fecha, string tiempoComida, string nombreAlimento, double nuevaCantidad)
+        {
+            var historial = _repositorio.ObtenerTodos();
+            var registro = historial.FirstOrDefault(m =>
+                m.NombreUsuario == _usuarioActual.NombreUsuario &&
+                m.Fecha.Date == fecha.Date &&
+                m.TiempoComida == tiempoComida);
+
+            if (registro == null) return;
+
+            var alimento = registro.Alimentos.FirstOrDefault(a => a.Nombre == nombreAlimento);
+            if (alimento != null)
+            {
+                alimento.Cantidad = nuevaCantidad;
+                _repositorio.GuardarTodos(historial);
+            }
+        }
     }
-}
+    }

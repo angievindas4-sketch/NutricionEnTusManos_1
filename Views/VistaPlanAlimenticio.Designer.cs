@@ -187,7 +187,7 @@
             colAccion.Name = "colAccion";
             colAccion.Resizable = DataGridViewTriState.True;
             colAccion.SortMode = DataGridViewColumnSortMode.Automatic;
-            colAccion.Text = "✏️ Editar | 🗑️ Eliminar\"";
+            colAccion.Text = "✏️ Editar | 🗑️ Eliminar";
             colAccion.UseColumnTextForButtonValue = true;
             // 
             // lblTotalCalorias
@@ -197,7 +197,7 @@
             lblTotalCalorias.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTotalCalorias.Location = new Point(801, 602);
             lblTotalCalorias.Name = "lblTotalCalorias";
-            lblTotalCalorias.Size = new Size(376, 28);
+            lblTotalCalorias.Size = new Size(352, 28);
             lblTotalCalorias.TabIndex = 4;
             lblTotalCalorias.Text = "TOTAL CALORÍAS DESAYUNO: 0 kcal";
             // 
@@ -205,9 +205,9 @@
             // 
             btnVolver.FlatStyle = FlatStyle.Flat;
             btnVolver.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVolver.Location = new Point(21, 598);
+            btnVolver.Location = new Point(21, 588);
             btnVolver.Name = "btnVolver";
-            btnVolver.Size = new Size(97, 43);
+            btnVolver.Size = new Size(136, 53);
             btnVolver.TabIndex = 5;
             btnVolver.Text = "← VOLVER";
             btnVolver.UseVisualStyleBackColor = true;

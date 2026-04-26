@@ -8,6 +8,8 @@
     "Altura": 1.75,
     "Edad": 25,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Activo",
     "Objetivo": "Ganar masa",
     "TipoDieta": "Est\u00E1ndar"
@@ -21,6 +23,8 @@
     "Altura": 1.6,
     "Edad": 30,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Sedentario",
     "Objetivo": "Perder grasa",
     "TipoDieta": "Keto"
@@ -34,6 +38,8 @@
     "Altura": 1.8,
     "Edad": 22,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Muy Activo",
     "Objetivo": "Mantener",
     "TipoDieta": "Vegetariano"
@@ -47,6 +53,8 @@
     "Altura": 1.85,
     "Edad": 28,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Activo",
     "Objetivo": "Perder grasa",
     "TipoDieta": "Est\u00E1ndar"
@@ -60,6 +68,8 @@
     "Altura": 1.55,
     "Edad": 35,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Sedentario",
     "Objetivo": "Mantener",
     "TipoDieta": "Keto"
@@ -73,6 +83,8 @@
     "Altura": 1.7,
     "Edad": 24,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Activo",
     "Objetivo": "Ganar masa",
     "TipoDieta": "Vegetariano"
@@ -86,6 +98,8 @@
     "Altura": 1.65,
     "Edad": 29,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Moderado",
     "Objetivo": "Perder grasa",
     "TipoDieta": "Est\u00E1ndar"
@@ -99,6 +113,8 @@
     "Altura": 1.78,
     "Edad": 31,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Muy Activo",
     "Objetivo": "Ganar masa",
     "TipoDieta": "Keto"
@@ -112,6 +128,8 @@
     "Altura": 1.62,
     "Edad": 27,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Activo",
     "Objetivo": "Mantener",
     "TipoDieta": "Vegetariano"
@@ -125,6 +143,8 @@
     "Altura": 1.9,
     "Edad": 33,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Sedentario",
     "Objetivo": "Perder grasa",
     "TipoDieta": "Est\u00E1ndar"
@@ -138,6 +158,8 @@
     "Altura": 1.58,
     "Edad": 21,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Moderado",
     "Objetivo": "Ganar masa",
     "TipoDieta": "Keto"
@@ -151,6 +173,8 @@
     "Altura": 1.73,
     "Edad": 26,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Activo",
     "Objetivo": "Mantener",
     "TipoDieta": "Vegetariano"
@@ -164,6 +188,8 @@
     "Altura": 1.67,
     "Edad": 34,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Sedentario",
     "Objetivo": "Perder grasa",
     "TipoDieta": "Est\u00E1ndar"
@@ -177,6 +203,8 @@
     "Altura": 1.82,
     "Edad": 30,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Muy Activo",
     "Objetivo": "Ganar masa",
     "TipoDieta": "Keto"
@@ -190,6 +218,8 @@
     "Altura": 1.6,
     "Edad": 23,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Activo",
     "Objetivo": "Mantener",
     "TipoDieta": "Vegetariano"
@@ -203,6 +233,8 @@
     "Altura": 1.76,
     "Edad": 32,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Moderado",
     "Objetivo": "Perder grasa",
     "TipoDieta": "Est\u00E1ndar"
@@ -216,6 +248,8 @@
     "Altura": 1.57,
     "Edad": 25,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Sedentario",
     "Objetivo": "Ganar masa",
     "TipoDieta": "Keto"
@@ -229,6 +263,8 @@
     "Altura": 1.79,
     "Edad": 27,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Activo",
     "Objetivo": "Mantener",
     "TipoDieta": "Vegetariano"
@@ -242,6 +278,8 @@
     "Altura": 1.64,
     "Edad": 31,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Moderado",
     "Objetivo": "Perder grasa",
     "TipoDieta": "Est\u00E1ndar"
@@ -255,6 +293,8 @@
     "Altura": 1.83,
     "Edad": 29,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Muy Activo",
     "Objetivo": "Ganar masa",
     "TipoDieta": "Keto"
@@ -268,6 +308,8 @@
     "Altura": 1.61,
     "Edad": 24,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Activo",
     "Objetivo": "Mantener",
     "TipoDieta": "Vegetariano"
@@ -281,6 +323,8 @@
     "Altura": 1.88,
     "Edad": 36,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Sedentario",
     "Objetivo": "Perder grasa",
     "TipoDieta": "Est\u00E1ndar"
@@ -294,6 +338,8 @@
     "Altura": 1.59,
     "Edad": 22,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Moderado",
     "Objetivo": "Ganar masa",
     "TipoDieta": "Keto"
@@ -307,6 +353,8 @@
     "Altura": 1.72,
     "Edad": 28,
     "Sexo": "M",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Activo",
     "Objetivo": "Mantener",
     "TipoDieta": "Vegetariano"
@@ -320,6 +368,8 @@
     "Altura": 1.66,
     "Edad": 30,
     "Sexo": "F",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Sedentario",
     "Objetivo": "Perder grasa",
     "TipoDieta": "Est\u00E1ndar"
@@ -333,6 +383,8 @@
     "Altura": 158,
     "Edad": 39,
     "Sexo": "Femenino",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Sedentario",
     "Objetivo": "Perder Peso",
     "TipoDieta": "Keto"
@@ -346,6 +398,8 @@
     "Altura": 158,
     "Edad": 39,
     "Sexo": "Femenino",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
     "NivelActividad": "Sedentario",
     "Objetivo": "Perder Peso",
     "TipoDieta": "Keto"
@@ -355,12 +409,29 @@
     "NombreCompleto": "Anyelith Nu\u00F1ez",
     "NombreUsuario": "Angie0808",
     "Contrasena": "1234",
-    "Peso": 88,
+    "Peso": 75,
     "Altura": 158,
     "Edad": 39,
     "Sexo": "Femenino",
+    "PesoInicial": 82,
+    "PesoMeta": 65,
     "NivelActividad": "Sedentario",
     "Objetivo": "Perder Peso",
-    "TipoDieta": "Keto"
+    "TipoDieta": "Vegetariana"
+  },
+  {
+    "Id": 29,
+    "NombreCompleto": "Noelia Prado",
+    "NombreUsuario": "Noe08",
+    "Contrasena": "1234",
+    "Peso": 68,
+    "Altura": 170,
+    "Edad": 30,
+    "Sexo": "Femenino",
+    "PesoInicial": 0,
+    "PesoMeta": 0,
+    "NivelActividad": "Sedentario",
+    "Objetivo": "Perder Peso",
+    "TipoDieta": "Est\u00E1ndar"
   }
 ]

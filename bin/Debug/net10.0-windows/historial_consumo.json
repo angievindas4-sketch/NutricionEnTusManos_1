@@ -10,7 +10,8 @@
         "Calorias": 140,
         "Proteinas": 12,
         "Carbohidratos": 1.2,
-        "Grasas": 10
+        "Grasas": 10,
+        "Cantidad": 1
       },
       {
         "Nombre": "Avena en hojuelas",
@@ -18,7 +19,8 @@
         "Calorias": 190,
         "Proteinas": 7,
         "Carbohidratos": 33,
-        "Grasas": 3
+        "Grasas": 3,
+        "Cantidad": 1
       }
     ]
   },
@@ -33,7 +35,8 @@
         "Calorias": 247,
         "Proteinas": 46,
         "Carbohidratos": 0,
-        "Grasas": 5
+        "Grasas": 5,
+        "Cantidad": 1
       },
       {
         "Nombre": "Arroz Blanco",
@@ -41,7 +44,8 @@
         "Calorias": 260,
         "Proteinas": 5.4,
         "Carbohidratos": 56,
-        "Grasas": 0.6
+        "Grasas": 0.6,
+        "Cantidad": 1
       }
     ]
   },
@@ -56,7 +60,8 @@
         "Calorias": 122,
         "Proteinas": 1.3,
         "Carbohidratos": 32,
-        "Grasas": 0.4
+        "Grasas": 0.4,
+        "Cantidad": 1
       },
       {
         "Nombre": "Manzana Verde",
@@ -64,7 +69,8 @@
         "Calorias": 95,
         "Proteinas": 0.5,
         "Carbohidratos": 25,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 1
       },
       {
         "Nombre": "Arroz Blanco",
@@ -72,7 +78,8 @@
         "Calorias": 130,
         "Proteinas": 2.7,
         "Carbohidratos": 28,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 1
       },
       {
         "Nombre": "Leche Descremada",
@@ -80,7 +87,8 @@
         "Calorias": 85,
         "Proteinas": 8,
         "Carbohidratos": 12,
-        "Grasas": 0.5
+        "Grasas": 0.5,
+        "Cantidad": 1
       },
       {
         "Nombre": "Almendras",
@@ -88,7 +96,8 @@
         "Calorias": 170,
         "Proteinas": 6,
         "Carbohidratos": 6,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       },
       {
         "Nombre": "Huevo Entero",
@@ -96,7 +105,8 @@
         "Calorias": 70,
         "Proteinas": 6,
         "Carbohidratos": 0.6,
-        "Grasas": 5
+        "Grasas": 5,
+        "Cantidad": 1
       },
       {
         "Nombre": "Avena en hojuelas",
@@ -104,7 +114,8 @@
         "Calorias": 190,
         "Proteinas": 7,
         "Carbohidratos": 33,
-        "Grasas": 3
+        "Grasas": 3,
+        "Cantidad": 1
       },
       {
         "Nombre": "Arroz Blanco",
@@ -112,7 +123,8 @@
         "Calorias": 130,
         "Proteinas": 2.7,
         "Carbohidratos": 28,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 1
       },
       {
         "Nombre": "Aguacate",
@@ -120,7 +132,8 @@
         "Calorias": 160,
         "Proteinas": 2,
         "Carbohidratos": 9,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       }
     ]
   },
@@ -135,7 +148,8 @@
         "Calorias": 130,
         "Proteinas": 2.7,
         "Carbohidratos": 28,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -143,7 +157,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -151,7 +166,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -159,7 +175,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -167,7 +184,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -175,7 +193,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Arroz Blanco",
@@ -183,7 +202,8 @@
         "Calorias": 130,
         "Proteinas": 2.7,
         "Carbohidratos": 28,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 1
       },
       {
         "Nombre": "Arroz Blanco",
@@ -191,7 +211,8 @@
         "Calorias": 130,
         "Proteinas": 2.7,
         "Carbohidratos": 28,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 1
       },
       {
         "Nombre": "Arroz Blanco",
@@ -199,7 +220,8 @@
         "Calorias": 130,
         "Proteinas": 2.7,
         "Carbohidratos": 28,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 1
       },
       {
         "Nombre": "Aguacate",
@@ -207,7 +229,8 @@
         "Calorias": 160,
         "Proteinas": 2,
         "Carbohidratos": 9,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       },
       {
         "Nombre": "Aguacate",
@@ -215,7 +238,8 @@
         "Calorias": 160,
         "Proteinas": 2,
         "Carbohidratos": 9,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       },
       {
         "Nombre": "Aguacate",
@@ -223,7 +247,8 @@
         "Calorias": 160,
         "Proteinas": 2,
         "Carbohidratos": 9,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       },
       {
         "Nombre": "Aguacate",
@@ -231,7 +256,8 @@
         "Calorias": 160,
         "Proteinas": 2,
         "Carbohidratos": 9,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       },
       {
         "Nombre": "Aguacate",
@@ -239,7 +265,8 @@
         "Calorias": 160,
         "Proteinas": 2,
         "Carbohidratos": 9,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       },
       {
         "Nombre": "Aguacate",
@@ -247,7 +274,8 @@
         "Calorias": 160,
         "Proteinas": 2,
         "Carbohidratos": 9,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       },
       {
         "Nombre": "Aguacate",
@@ -255,7 +283,8 @@
         "Calorias": 160,
         "Proteinas": 2,
         "Carbohidratos": 9,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       },
       {
         "Nombre": "Aguacate",
@@ -263,7 +292,8 @@
         "Calorias": 160,
         "Proteinas": 2,
         "Carbohidratos": 9,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       }
     ]
   },
@@ -278,7 +308,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -286,7 +317,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -294,7 +326,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -302,7 +335,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -310,7 +344,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -318,7 +353,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -326,7 +362,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       },
       {
         "Nombre": "Platano Maduro",
@@ -334,7 +371,8 @@
         "Calorias": 122,
         "Proteinas": 1.3,
         "Carbohidratos": 32,
-        "Grasas": 0.4
+        "Grasas": 0.4,
+        "Cantidad": 1
       },
       {
         "Nombre": "Platano Maduro",
@@ -342,7 +380,8 @@
         "Calorias": 122,
         "Proteinas": 1.3,
         "Carbohidratos": 32,
-        "Grasas": 0.4
+        "Grasas": 0.4,
+        "Cantidad": 1
       },
       {
         "Nombre": "Platano Maduro",
@@ -350,7 +389,8 @@
         "Calorias": 122,
         "Proteinas": 1.3,
         "Carbohidratos": 32,
-        "Grasas": 0.4
+        "Grasas": 0.4,
+        "Cantidad": 1
       },
       {
         "Nombre": "Platano Maduro",
@@ -358,7 +398,8 @@
         "Calorias": 122,
         "Proteinas": 1.3,
         "Carbohidratos": 32,
-        "Grasas": 0.4
+        "Grasas": 0.4,
+        "Cantidad": 1
       },
       {
         "Nombre": "Platano Maduro",
@@ -366,7 +407,8 @@
         "Calorias": 122,
         "Proteinas": 1.3,
         "Carbohidratos": 32,
-        "Grasas": 0.4
+        "Grasas": 0.4,
+        "Cantidad": 1
       },
       {
         "Nombre": "Platano Maduro",
@@ -374,7 +416,8 @@
         "Calorias": 122,
         "Proteinas": 1.3,
         "Carbohidratos": 32,
-        "Grasas": 0.4
+        "Grasas": 0.4,
+        "Cantidad": 1
       },
       {
         "Nombre": "Platano Maduro",
@@ -382,7 +425,8 @@
         "Calorias": 122,
         "Proteinas": 1.3,
         "Carbohidratos": 32,
-        "Grasas": 0.4
+        "Grasas": 0.4,
+        "Cantidad": 1
       },
       {
         "Nombre": "Platano Maduro",
@@ -390,7 +434,8 @@
         "Calorias": 122,
         "Proteinas": 1.3,
         "Carbohidratos": 32,
-        "Grasas": 0.4
+        "Grasas": 0.4,
+        "Cantidad": 1
       }
     ]
   },
@@ -405,7 +450,8 @@
         "Calorias": 122,
         "Proteinas": 1.3,
         "Carbohidratos": 32,
-        "Grasas": 0.4
+        "Grasas": 0.4,
+        "Cantidad": 1
       },
       {
         "Nombre": "Leche Descremada",
@@ -413,7 +459,8 @@
         "Calorias": 85,
         "Proteinas": 8,
         "Carbohidratos": 12,
-        "Grasas": 0.5
+        "Grasas": 0.5,
+        "Cantidad": 1
       },
       {
         "Nombre": "Almendras",
@@ -421,7 +468,8 @@
         "Calorias": 170,
         "Proteinas": 6,
         "Carbohidratos": 6,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       },
       {
         "Nombre": "Huevo Entero",
@@ -429,7 +477,8 @@
         "Calorias": 70,
         "Proteinas": 6,
         "Carbohidratos": 0.6,
-        "Grasas": 5
+        "Grasas": 5,
+        "Cantidad": 1
       },
       {
         "Nombre": "Aguacate",
@@ -437,7 +486,8 @@
         "Calorias": 160,
         "Proteinas": 2,
         "Carbohidratos": 9,
-        "Grasas": 15
+        "Grasas": 15,
+        "Cantidad": 1
       },
       {
         "Nombre": "Manzana Verde",
@@ -445,7 +495,8 @@
         "Calorias": 95,
         "Proteinas": 0.5,
         "Carbohidratos": 25,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 1
       },
       {
         "Nombre": "Leche Descremada",
@@ -453,7 +504,8 @@
         "Calorias": 85,
         "Proteinas": 8,
         "Carbohidratos": 12,
-        "Grasas": 0.5
+        "Grasas": 0.5,
+        "Cantidad": 1
       },
       {
         "Nombre": "Atun en agua",
@@ -461,7 +513,8 @@
         "Calorias": 116,
         "Proteinas": 26,
         "Carbohidratos": 0,
-        "Grasas": 1
+        "Grasas": 1,
+        "Cantidad": 1
       },
       {
         "Nombre": "Pechuga de Pollo",
@@ -469,7 +522,8 @@
         "Calorias": 165,
         "Proteinas": 31,
         "Carbohidratos": 0,
-        "Grasas": 3.6
+        "Grasas": 3.6,
+        "Cantidad": 1
       }
     ]
   },
@@ -484,7 +538,8 @@
         "Calorias": 130,
         "Proteinas": 2.7,
         "Carbohidratos": 28,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 1
       },
       {
         "Nombre": "Picadillo de Vainica con huevo",
@@ -492,7 +547,8 @@
         "Calorias": 140,
         "Proteinas": 9,
         "Carbohidratos": 8,
-        "Grasas": 7
+        "Grasas": 7,
+        "Cantidad": 1
       },
       {
         "Nombre": "Gallo Pinto con Natilla",
@@ -500,7 +556,8 @@
         "Calorias": 280,
         "Proteinas": 8,
         "Carbohidratos": 38,
-        "Grasas": 12
+        "Grasas": 12,
+        "Cantidad": 1
       },
       {
         "Nombre": "Gallo Pinto con Natilla",
@@ -508,7 +565,8 @@
         "Calorias": 280,
         "Proteinas": 8,
         "Carbohidratos": 38,
-        "Grasas": 12
+        "Grasas": 12,
+        "Cantidad": 1
       },
       {
         "Nombre": "Picadillo de Vainica con huevo",
@@ -516,7 +574,8 @@
         "Calorias": 140,
         "Proteinas": 9,
         "Carbohidratos": 8,
-        "Grasas": 7
+        "Grasas": 7,
+        "Cantidad": 1
       }
     ]
   },
@@ -526,20 +585,40 @@
     "TiempoComida": "Desayuno",
     "Alimentos": [
       {
-        "Nombre": "Pechuga de Pollo",
-        "UnidadMedida": null,
-        "Calorias": 165,
-        "Proteinas": 31,
-        "Carbohidratos": 0,
-        "Grasas": 3.6
-      },
-      {
         "Nombre": "Arroz Blanco",
         "UnidadMedida": null,
         "Calorias": 130,
         "Proteinas": 2.7,
         "Carbohidratos": 28,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 4
+      },
+      {
+        "Nombre": "Pan casero de elote",
+        "UnidadMedida": null,
+        "Calorias": 240,
+        "Proteinas": 4,
+        "Carbohidratos": 42,
+        "Grasas": 8,
+        "Cantidad": 8
+      },
+      {
+        "Nombre": "Leche Descremada",
+        "UnidadMedida": null,
+        "Calorias": 85,
+        "Proteinas": 8,
+        "Carbohidratos": 12,
+        "Grasas": 0.5,
+        "Cantidad": 1
+      },
+      {
+        "Nombre": "Chorreada con natilla",
+        "UnidadMedida": null,
+        "Calorias": 320,
+        "Proteinas": 6,
+        "Carbohidratos": 52,
+        "Grasas": 12,
+        "Cantidad": 1
       }
     ]
   },
@@ -554,7 +633,17 @@
         "Calorias": 280,
         "Proteinas": 6,
         "Carbohidratos": 42,
-        "Grasas": 14
+        "Grasas": 14,
+        "Cantidad": 1
+      },
+      {
+        "Nombre": "Arroz Blanco",
+        "UnidadMedida": null,
+        "Calorias": 130,
+        "Proteinas": 2.7,
+        "Carbohidratos": 28,
+        "Grasas": 0.3,
+        "Cantidad": 7
       }
     ]
   },
@@ -569,7 +658,8 @@
         "Calorias": 85,
         "Proteinas": 8,
         "Carbohidratos": 12,
-        "Grasas": 0.5
+        "Grasas": 0.5,
+        "Cantidad": 1
       }
     ]
   },
@@ -584,7 +674,106 @@
         "Calorias": 95,
         "Proteinas": 0.5,
         "Carbohidratos": 25,
-        "Grasas": 0.3
+        "Grasas": 0.3,
+        "Cantidad": 1
+      }
+    ]
+  },
+  {
+    "NombreUsuario": "Noe08",
+    "Fecha": "2026-04-26T00:00:00-06:00",
+    "TiempoComida": "Desayuno",
+    "Alimentos": [
+      {
+        "Nombre": "Banano",
+        "UnidadMedida": "1 unidad",
+        "Calorias": 89,
+        "Proteinas": 1.1,
+        "Carbohidratos": 22.8,
+        "Grasas": 0.3,
+        "Cantidad": 3
+      },
+      {
+        "Nombre": "Leche Descremada",
+        "UnidadMedida": null,
+        "Calorias": 85,
+        "Proteinas": 8,
+        "Carbohidratos": 12,
+        "Grasas": 0.5,
+        "Cantidad": 2
+      },
+      {
+        "Nombre": "Olla de Carne (Sin carne - Sopa de verduras)",
+        "UnidadMedida": null,
+        "Calorias": 180,
+        "Proteinas": 3,
+        "Carbohidratos": 40,
+        "Grasas": 1,
+        "Cantidad": 1
+      }
+    ]
+  },
+  {
+    "NombreUsuario": "Noe08",
+    "Fecha": "2026-04-26T00:00:00-06:00",
+    "TiempoComida": "Merienda",
+    "Alimentos": [
+      {
+        "Nombre": "Manzana Verde",
+        "UnidadMedida": null,
+        "Calorias": 95,
+        "Proteinas": 0.5,
+        "Carbohidratos": 25,
+        "Grasas": 0.3,
+        "Cantidad": 1
+      }
+    ]
+  },
+  {
+    "NombreUsuario": "Angie0808",
+    "Fecha": "2026-04-25T00:00:00",
+    "TiempoComida": "Desayuno",
+    "Alimentos": [
+      {
+        "Nombre": "Arroz Blanco",
+        "UnidadMedida": null,
+        "Calorias": 130,
+        "Proteinas": 2.7,
+        "Carbohidratos": 28,
+        "Grasas": 0.3,
+        "Cantidad": 15
+      }
+    ]
+  },
+  {
+    "NombreUsuario": "Angie0808",
+    "Fecha": "2026-04-15T00:00:00",
+    "TiempoComida": "Almuerzo",
+    "Alimentos": [
+      {
+        "Nombre": "Aguacate",
+        "UnidadMedida": null,
+        "Calorias": 160,
+        "Proteinas": 2,
+        "Carbohidratos": 9,
+        "Grasas": 15,
+        "Cantidad": 17
+      }
+    ]
+  },
+  {
+    "NombreUsuario": "Angie0808",
+    "Fecha": "2026-04-15T00:00:00",
+    "TiempoComida": "Cena",
+    "Alimentos": [
+      {
+        "Nombre": "Chorreada con natilla",
+        "UnidadMedida": null,
+        "Calorias": 320,
+        "Proteinas": 6,
+        "Carbohidratos": 52,
+        "Grasas": 12,
+        "Cantidad": 20
       }
     ]
   }
