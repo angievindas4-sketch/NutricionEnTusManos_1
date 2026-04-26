@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wxPQ1QYBbmY=",
+  "dgSpecHash": "ukixymXIrL8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Anyel\\Documents\\UNIVERSIDAD - CUATRI I - 2026\\TECNICAS DE PROGRAMACION\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1\\NutricionEnTusManos_1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Anyel\\.nuget\\packages\\winforms.datavisualization\\1.10.0\\winforms.datavisualization.1.10.0.nupkg.sha512"
+  ],
   "logs": []
 }

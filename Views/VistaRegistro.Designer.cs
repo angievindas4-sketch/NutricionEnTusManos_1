@@ -28,45 +28,233 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            groupBox3 = new GroupBox();
+            comboBox2 = new ComboBox();
+            comboBox1 = new ComboBox();
+            label8 = new Label();
+            label7 = new Label();
+            groupBox2 = new GroupBox();
+            radioButton3 = new RadioButton();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
+            nunEdad = new NumericUpDown();
+            numPeso = new NumericUpDown();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            groupBox1 = new GroupBox();
+            txtPassword = new TextBox();
+            label3 = new Label();
+            txtUsuario = new TextBox();
             label1 = new Label();
             txtNombre = new TextBox();
-            txtUsuario = new TextBox();
-            txtPassword = new TextBox();
             label2 = new Label();
-            label3 = new Label();
-            groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            numPeso = new NumericUpDown();
-            nunEdad = new NumericUpDown();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton3 = new RadioButton();
-            panel1.SuspendLayout();
-            groupBox1.SuspendLayout();
+            groupBox4 = new GroupBox();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            btnFinalizarRegistro = new Button();
+            label9 = new Label();
+            numAltura = new NumericUpDown();
+            groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numPeso).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nunEdad).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numPeso).BeginInit();
+            groupBox1.SuspendLayout();
+            groupBox4.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numAltura).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // groupBox3
             // 
-            panel1.Controls.Add(groupBox2);
-            panel1.Controls.Add(groupBox1);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1278, 678);
-            panel1.TabIndex = 0;
+            groupBox3.Controls.Add(comboBox2);
+            groupBox3.Controls.Add(comboBox1);
+            groupBox3.Controls.Add(label8);
+            groupBox3.Controls.Add(label7);
+            groupBox3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox3.Location = new Point(894, 63);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(354, 321);
+            groupBox3.TabIndex = 5;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Tus Objtivos";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Estándar", "Vegetariana", "Keto" });
+            comboBox2.Location = new Point(162, 172);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(179, 33);
+            comboBox2.TabIndex = 3;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Ganar Masa", "Perder Peso", "Mantener" });
+            comboBox1.Location = new Point(162, 58);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(179, 33);
+            comboBox1.TabIndex = 2;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(16, 180);
+            label8.Name = "label8";
+            label8.Size = new Size(126, 25);
+            label8.TabIndex = 1;
+            label8.Text = "Tipo de dieta:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(16, 66);
+            label7.Name = "label7";
+            label7.Size = new Size(93, 25);
+            label7.TabIndex = 0;
+            label7.Text = "Objetivo: ";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(numAltura);
+            groupBox2.Controls.Add(label9);
+            groupBox2.Controls.Add(radioButton3);
+            groupBox2.Controls.Add(radioButton2);
+            groupBox2.Controls.Add(radioButton1);
+            groupBox2.Controls.Add(nunEdad);
+            groupBox2.Controls.Add(numPeso);
+            groupBox2.Controls.Add(label6);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox2.Location = new Point(544, 63);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(337, 321);
+            groupBox2.TabIndex = 4;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Información Física";
+            groupBox2.Enter += groupBox2_Enter;
+            // 
+            // radioButton3
+            // 
+            radioButton3.AutoSize = true;
+            radioButton3.Location = new Point(156, 286);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(76, 29);
+            radioButton3.TabIndex = 7;
+            radioButton3.TabStop = true;
+            radioButton3.Text = "Otro";
+            radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(156, 251);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(120, 29);
+            radioButton2.TabIndex = 6;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Femenino";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(156, 216);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(122, 29);
+            radioButton1.TabIndex = 5;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Masculino";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // nunEdad
+            // 
+            nunEdad.Location = new Point(156, 170);
+            nunEdad.Name = "nunEdad";
+            nunEdad.Size = new Size(154, 31);
+            nunEdad.TabIndex = 4;
+            // 
+            // numPeso
+            // 
+            numPeso.Location = new Point(156, 113);
+            numPeso.Name = "numPeso";
+            numPeso.Size = new Size(154, 31);
+            numPeso.TabIndex = 3;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(41, 216);
+            label6.Name = "label6";
+            label6.Size = new Size(78, 25);
+            label6.TabIndex = 2;
+            label6.Text = "Género:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(41, 172);
+            label5.Name = "label5";
+            label5.Size = new Size(61, 25);
+            label5.TabIndex = 1;
+            label5.Text = "Edad: ";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(41, 115);
+            label4.Name = "label4";
+            label4.Size = new Size(92, 25);
+            label4.TabIndex = 0;
+            label4.Text = "Peso (kg):";
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(txtPassword);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(txtUsuario);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(txtNombre);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox1.Location = new Point(6, 63);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(521, 321);
+            groupBox1.TabIndex = 3;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Datos de la Cuenta";
+            groupBox1.Enter += groupBox1_Enter;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Location = new Point(209, 193);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(297, 31);
+            txtPassword.TabIndex = 3;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(16, 196);
+            label3.Name = "label3";
+            label3.Size = new Size(110, 25);
+            label3.TabIndex = 5;
+            label3.Text = "Contraseña:";
+            // 
+            // txtUsuario
+            // 
+            txtUsuario.Location = new Point(209, 130);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(297, 31);
+            txtUsuario.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(16, 66);
+            label1.Location = new Point(16, 82);
             label1.Name = "label1";
             label1.Size = new Size(172, 25);
             label1.TabIndex = 0;
@@ -79,20 +267,6 @@
             txtNombre.Size = new Size(297, 31);
             txtNombre.TabIndex = 1;
             // 
-            // txtUsuario
-            // 
-            txtUsuario.Location = new Point(209, 130);
-            txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(297, 31);
-            txtUsuario.TabIndex = 2;
-            // 
-            // txtPassword
-            // 
-            txtPassword.Location = new Point(209, 193);
-            txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(297, 31);
-            txtPassword.TabIndex = 3;
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -102,143 +276,88 @@
             label2.TabIndex = 4;
             label2.Text = "Usuario:";
             // 
-            // label3
+            // groupBox4
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(16, 196);
-            label3.Name = "label3";
-            label3.Size = new Size(110, 25);
-            label3.TabIndex = 5;
-            label3.Text = "Contraseña:";
+            groupBox4.Controls.Add(panel1);
+            groupBox4.Controls.Add(groupBox3);
+            groupBox4.Controls.Add(groupBox1);
+            groupBox4.Controls.Add(groupBox2);
+            groupBox4.Location = new Point(12, 12);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(1254, 495);
+            groupBox4.TabIndex = 1;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "CREAR CUENTA DE USUARIO";
+            groupBox4.Enter += groupBox4_Enter;
             // 
-            // groupBox1
+            // panel1
             // 
-            groupBox1.Controls.Add(txtPassword);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(txtUsuario);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(txtNombre);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(12, 59);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(521, 287);
-            groupBox1.TabIndex = 3;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Datos de la Cuenta";
+            panel1.Location = new Point(470, 501);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(324, 139);
+            panel1.TabIndex = 2;
             // 
-            // groupBox2
+            // panel2
             // 
-            groupBox2.Controls.Add(radioButton3);
-            groupBox2.Controls.Add(radioButton2);
-            groupBox2.Controls.Add(radioButton1);
-            groupBox2.Controls.Add(nunEdad);
-            groupBox2.Controls.Add(numPeso);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(label4);
-            groupBox2.Location = new Point(554, 59);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(338, 287);
-            groupBox2.TabIndex = 4;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Información Física";
+            panel2.Controls.Add(btnFinalizarRegistro);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 516);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1278, 162);
+            panel2.TabIndex = 2;
             // 
-            // label4
+            // btnFinalizarRegistro
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(27, 58);
-            label4.Name = "label4";
-            label4.Size = new Size(103, 28);
-            label4.TabIndex = 0;
-            label4.Text = "Peso (kg):";
+            btnFinalizarRegistro.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnFinalizarRegistro.Location = new Point(428, 14);
+            btnFinalizarRegistro.Name = "btnFinalizarRegistro";
+            btnFinalizarRegistro.Size = new Size(389, 122);
+            btnFinalizarRegistro.TabIndex = 0;
+            btnFinalizarRegistro.Text = "FINALIZAR Y GUARDAR REGISTRO";
+            btnFinalizarRegistro.UseVisualStyleBackColor = true;
+            btnFinalizarRegistro.Click += btnFinalizarRegistro_Click;
             // 
-            // label5
+            // label9
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(27, 113);
-            label5.Name = "label5";
-            label5.Size = new Size(67, 28);
-            label5.TabIndex = 1;
-            label5.Text = "Edad: ";
+            label9.AutoSize = true;
+            label9.Location = new Point(41, 66);
+            label9.Name = "label9";
+            label9.Size = new Size(72, 25);
+            label9.TabIndex = 8;
+            label9.Text = "Altura: ";
             // 
-            // label6
+            // numAltura
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(27, 168);
-            label6.Name = "label6";
-            label6.Size = new Size(84, 28);
-            label6.TabIndex = 2;
-            label6.Text = "Género:";
-            // 
-            // numPeso
-            // 
-            numPeso.Location = new Point(156, 56);
-            numPeso.Name = "numPeso";
-            numPeso.Size = new Size(154, 34);
-            numPeso.TabIndex = 3;
-            // 
-            // nunEdad
-            // 
-            nunEdad.Location = new Point(156, 111);
-            nunEdad.Name = "nunEdad";
-            nunEdad.Size = new Size(154, 34);
-            nunEdad.TabIndex = 4;
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(157, 164);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(129, 32);
-            radioButton1.TabIndex = 5;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Masculino";
-            radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(157, 202);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(128, 32);
-            radioButton2.TabIndex = 6;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Femenino";
-            radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(157, 240);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(78, 32);
-            radioButton3.TabIndex = 7;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Otro";
-            radioButton3.UseVisualStyleBackColor = true;
+            numAltura.Location = new Point(156, 60);
+            numAltura.Name = "numAltura";
+            numAltura.Size = new Size(154, 31);
+            numAltura.TabIndex = 9;
             // 
             // VistaRegistro
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1278, 678);
-            Controls.Add(panel1);
+            Controls.Add(panel2);
+            Controls.Add(groupBox4);
             Name = "VistaRegistro";
             Text = "VistaRegistro";
-            panel1.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            Load += VistaRegistro_Load;
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numPeso).EndInit();
             ((System.ComponentModel.ISupportInitialize)nunEdad).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numPeso).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)numAltura).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
         private Label label1;
         private TextBox txtUsuario;
         private TextBox txtNombre;
@@ -255,5 +374,16 @@
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private NumericUpDown nunEdad;
+        private GroupBox groupBox3;
+        private ComboBox comboBox2;
+        private ComboBox comboBox1;
+        private Label label8;
+        private Label label7;
+        private GroupBox groupBox4;
+        private Panel panel1;
+        private Panel panel2;
+        private Button btnFinalizarRegistro;
+        private Label label9;
+        private NumericUpDown numAltura;
     }
 }

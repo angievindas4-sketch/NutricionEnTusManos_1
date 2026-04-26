@@ -4,7 +4,16 @@
     <Compile Update="Views\VistaDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\VistaListaAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\VistaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\VistaPlanAlimenticio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\VistaProgreso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\VistaRegistro.cs">
